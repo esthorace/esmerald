@@ -1,0 +1,60 @@
+{
+  "name": "python-theme",
+  "displayName": "Esmerald",
+  "version": "2.7.5",
+  "license": "MIT",
+  "publisher": "esthorace",
+  "description": "It's a beautiful theme",
+  "icon": "static/esmerald.png",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "python",
+    "javascript",
+    "typescript",
+    "react",
+    "html",
+    "esmerald",
+    "esmeralda",
+    "astro",
+    "fastapi",
+    "django",
+    "node",
+    "dark",
+    "light",
+    "theme",
+    "tema",
+    "color"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Esmerald",
+        "uiTheme": "vs-dark",
+        "path": "./themes/esmerald.json"
+      },
+      {
+        "label": "Esmerald Light",
+        "uiTheme": "vs",
+        "path": "./themes/esmerald-light.json"
+      }
+    ]
+  },
+  "author": "Esteban H. Acevedo <esteban.horacio.acevedo@gmail.com> (https://www.linkedin.com/in/esteban-acevedo-aberastain/)",
+  "repository": {
+    "url": "git+https://github.com/esthorace/esmerald.git",
+    "type": "git"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.2.2"
+  },
+  "scripts": {
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies"
+  },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd"
+}
