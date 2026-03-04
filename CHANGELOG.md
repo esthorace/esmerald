@@ -2,6 +2,10 @@
 
 All notable changes to the "python-theme" extension will be documented in this file.
 
+## [2.8.0] - 2026-03-04
+
+- Add Golang support
+
 ## [2.7.0] - 2025-09-10
 
 - Improve Light Theme

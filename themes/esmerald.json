@@ -1531,6 +1531,45 @@
 			"settings": {
 				"foreground": "#569CD6"
 			}
+		},
+		{
+			"name": "Go: asignación",
+			"scope": "source.go keyword.operator.assignment",
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Go: funciones, tipos, estructuras y control",
+			"scope": [
+				"source.go keyword.function",
+				"keyword.type.go",
+				"keyword.struct.go",
+				"keyword.control.go"
+			],
+			"settings": {
+				"foreground": "#F87F7F"
+			}
+		},
+		{
+			"name": "Go: imports, paquetes y dirección",
+			"scope": [
+				"keyword.control.import.go",
+				"keyword.package.go",
+				"keyword.operator.address.go"
+			],
+			"settings": {
+				"foreground": "#D79BFF"
+			}
+		},
+		{
+			"name": "Go: tipos predefinidos",
+			"scope": [
+				"entity.name.type.package.go"
+			],
+			"settings": {
+				"foreground": "#FFFFFF"
+			}
 		}
 	],
 	"semanticTokenColors": {
