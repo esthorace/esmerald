@@ -1545,7 +1545,9 @@
 				"source.go keyword.function",
 				"keyword.type.go",
 				"keyword.struct.go",
-				"keyword.control.go"
+				"keyword.control.go",
+				"keyword.var.go",
+				"keyword.map.go"
 			],
 			"settings": {
 				"foreground": "#F87F7F"
@@ -1566,6 +1568,33 @@
 			"name": "Go: tipos predefinidos",
 			"scope": [
 				"entity.name.type.package.go"
+			],
+			"settings": {
+				"foreground": "#A4B1CD",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Go: propiedades",
+			"scope": "variable.other.property.go",
+			"settings": {
+				"foreground": "#4FC1FF"
+			}
+		},
+		{
+			"name": "Go: importaciones",
+			"scope": [
+				"entity.name.import.go"
+			],
+			"settings": {
+				"foreground": "#A4B1CD",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name" : "Go: booleano",
+			"scope": [
+				"constant.language.boolean.go"
 			],
 			"settings": {
 				"foreground": "#FFFFFF"
