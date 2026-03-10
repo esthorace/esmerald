@@ -283,20 +283,20 @@
 		"tab.lastPinnedBorder": "#6e7b968c",
 		"tab.unfocusedActiveBorder": "#a4b1cd",
 		"terminal.ansiBlue": "#004cff",
-		"terminal.ansiBrightBlue":"#5cb2ffd0",
-		"terminal.ansiBrightCyan":"#5cecc6d0",
-		"terminal.ansiBrightGreen":"#c5f467d0",
-		"terminal.ansiBrightMagenta":"#c16cfad0",
-		"terminal.ansiBrightRed":"#ff8f8fd0",
-		"terminal.ansiBrightWhite":"#ffffffd0",
-		"terminal.ansiBrightYellow":"#ffae00d0",
+		"terminal.ansiBrightBlue": "#5cb2ffd0",
+		"terminal.ansiBrightCyan": "#5cecc6d0",
+		"terminal.ansiBrightGreen": "#c5f467d0",
+		"terminal.ansiBrightMagenta": "#c16cfad0",
+		"terminal.ansiBrightRed": "#ff8f8fd0",
+		"terminal.ansiBrightWhite": "#ffffffd0",
+		"terminal.ansiBrightYellow": "#ffae00d0",
 		"terminal.ansiCyan": "#2ee7b6",
 		"terminal.ansiGreen": "#9fef00",
 		"terminal.ansiMagenta": "#9f00ff",
 		"terminal.ansiRed": "#ff3e3e",
 		"terminal.ansiWhite": "#ffffff",
 		"terminal.ansiYellow": "#ffaf00",
-		"terminal.background":"#121c2b",
+		"terminal.background": "#121c2b",
 		"terminal.foreground": "#a4b1cd",
 		"terminal.inactiveSelectionBackground": "#3a3d41",
 		"terminal.tab.activeBorder": "#0078d4",
@@ -1539,12 +1539,29 @@
 			}
 		},
 		{
-			"name": "Go: funciones, tipos, estructuras y control",
+			"name": "Go: comparasión",
+			"scope": [
+				"keyword.operator.comparison.go"
+			],
+			"settings": {
+				"foreground": "#A4B1CD"
+			}
+		},
+		{
+			"name": "Go: números",
+			"scope": "constant.numeric.decimal.go",
+			"settings": {
+				"foreground": "#fcb0b0"
+			}
+		},
+		{
+			"name": "Go: funciones, tipos, estructuras",
 			"scope": [
 				"source.go keyword.function",
+				"keyword.control.import.go",
+				"keyword.package.go",
 				"keyword.type.go",
 				"keyword.struct.go",
-				"keyword.control.go",
 				"keyword.var.go",
 				"keyword.map.go"
 			],
@@ -1553,10 +1570,17 @@
 			}
 		},
 		{
+			"name": "Go: control",
+			"scope": [
+				"keyword.control.go"
+			],
+			"settings": {
+				"foreground": "#D79BFF"
+			}
+		},
+		{
 			"name": "Go: imports, paquetes y dirección",
 			"scope": [
-				"keyword.control.import.go",
-				"keyword.package.go",
 				"keyword.operator.address.go"
 			],
 			"settings": {
@@ -1564,13 +1588,13 @@
 			}
 		},
 		{
-			"name": "Go: tipos predefinidos",
+			"name": "Go: paquetes",
 			"scope": [
 				"entity.name.type.package.go"
 			],
 			"settings": {
-				"foreground": "#A4B1CD",
-				"fontStyle": "bold"
+				"foreground": "#FFFFFF",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -1586,17 +1610,29 @@
 				"entity.name.import.go"
 			],
 			"settings": {
-				"foreground": "#A4B1CD",
+				"foreground": "#D2FF77",
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name" : "Go: booleano",
+			"name": "Go: booleano",
 			"scope": [
 				"constant.language.boolean.go"
 			],
 			"settings": {
 				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Go: paréntesis, llaves",
+			"scope": [
+				"punctuation.definition.begin.bracket.curly.go",
+				"punctuation.definition.end.bracket.curly.go",
+				"punctuation.definition.begin.bracket.round.go",
+				"punctuation.definition.end.bracket.round.go"
+			],
+			"settings": {
+				"foreground": "#5DEED1"
 			}
 		}
 	],
