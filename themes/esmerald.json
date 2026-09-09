@@ -287,15 +287,15 @@
 		"terminal.ansiBrightCyan": "#5cecc6d0",
 		"terminal.ansiBrightGreen": "#c5f467d0",
 		"terminal.ansiBrightMagenta": "#c290e4d0",
-		"terminal.ansiBrightRed":"#f3aeaed0",
-		"terminal.ansiBrightWhite":"#bababa",
-		"terminal.ansiBrightYellow" :"#edc97a",
+		"terminal.ansiBrightRed": "#f3aeaed0",
+		"terminal.ansiBrightWhite": "#bababa",
+		"terminal.ansiBrightYellow": "#edc97a",
 		"terminal.ansiCyan": "#9fdada",
 		"terminal.ansiGreen": "#95b35b",
-		"terminal.ansiMagenta":"#794a97",
-		"terminal.ansiRed":"#f27474",
-		"terminal.ansiWhite":"#e4e4e4",
-		"terminal.ansiYellow":"#cfb272",
+		"terminal.ansiMagenta": "#794a97",
+		"terminal.ansiRed": "#f27474",
+		"terminal.ansiWhite": "#e4e4e4",
+		"terminal.ansiYellow": "#cfb272",
 		"terminal.background": "#121c2b",
 		"terminal.foreground": "#a4b1cd",
 		"terminal.inactiveSelectionBackground": "#3a3d41",
@@ -815,18 +815,6 @@
 			}
 		},
 		{
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#569CD6"
-			}
-		},
-		{
-			"scope": "keyword.control",
-			"settings": {
-				"foreground": "#569CD6"
-			}
-		},
-		{
 			"scope": [
 				"keyword.operator.new",
 				"keyword.operator.expression",
@@ -971,7 +959,17 @@
 				"string.template"
 			],
 			"settings": {
-				"foreground": "#D2FF77"
+				"foreground": "#ccfa97"
+			}
+		},
+		{
+			"name": "Comments",
+			"scope": [
+				"comment"
+			],
+			"settings": {
+				"foreground": "#5f697c",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -981,17 +979,19 @@
 				"string.quoted.double.python"
 			],
 			"settings": {
-				"foreground": "#D2FF77"
+				"foreground": "#ccfa97"
 			}
 		},
 		{
 			"name": "Strings: punctuation",
 			"scope": [
-				"punctuation.definition.string",
-				"punctuation.definition.string string.quoted.single.python"
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.python",
+				"string.quoted.single.python",
+				"string.regexp.quoted.single.python"
 			],
 			"settings": {
-				"foreground": "#84a640"
+				"foreground": "#ccfa97"
 			}
 		},
 		{
@@ -999,20 +999,10 @@
 			"scope": [
 				"string.quoted.docstring.single.python",
 				"string.quoted.docstring.multi.python",
-				"comment",
 				"comment.block"
 			],
 			"settings": {
 				"foreground": "#889eda"
-			}
-		},
-		{
-			"name": "Python: Comments",
-			"scope": [
-				"comment"
-			],
-			"settings": {
-				"fontStyle": "italic"
 			}
 		},
 		{
@@ -1024,6 +1014,17 @@
 			],
 			"settings": {
 				"foreground": "#889EDA7C"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.definition.parameters.begin.python",
+				"punctuation.definition.parameters.end.python",
+				"punctuation.definition.arguments.begin.python",
+				"punctuation.definition.arguments.end.python"
+			],
+			"settings": {
+				"foreground": "#ffda96"
 			}
 		},
 		{
@@ -1049,6 +1050,202 @@
 			],
 			"settings": {
 				"foreground": "#4FC1FF"
+			}
+		},
+		{
+			"name": "Variable Language",
+			"scope": "variable.language",
+			"settings": {
+				"foreground": "#569CD6"
+			}
+		},
+		{
+			"name": "Keywords",
+			"scope": [
+				"keyword.control",
+				"keyword.operator.logical.python",
+				"storage.modifier.declaration.python",
+				"storage.type.class.python",
+				"storage.type.function.python",
+				"storage.type.function.async.python"
+			],
+			"settings": {
+				"foreground": "#F87F7F"
+			}
+		},
+		{
+			"name": "Operators, puntuation and delimiters",
+			"scope": [
+				"keyword.operator.assignment.python",
+				"keyword.operator.arithmetic.python",
+				"punctuation.separator.annotation.python",
+				"meta.function.parameters.python punctuation.definition.list.begin.python",
+				"meta.function.parameters.python punctuation.definition.list.end.python",
+				"meta.function.python punctuation.definition.list.begin.python",
+				"meta.function.python punctuation.definition.list.end.python",
+				"punctuation.definition.decorator.python",
+				"constant.character.escape.python",
+				"constant.character.escape.regexp",
+				"keyword.operator.unpacking.arguments.python"
+			],
+			"settings": {
+				"foreground": "#A4B1CD"
+			}
+		},
+		{
+			"scope": [
+				"meta.function.python punctuation.definition.list.begin.python",
+				"meta.function.python punctuation.definition.list.end.python"
+			],
+			"settings": {
+				"foreground": "#5DEED1"
+			}
+		},
+		{
+			"scope": [
+				"punctuation.parenthesis.begin.python",
+				"punctuation.parenthesis.end.python",
+				"punctuation.definition.list.begin.python",
+				"punctuation.definition.list.end.python",
+				"punctuation.definition.dict.begin.python",
+				"punctuation.definition.dict.end.python",
+				"punctuation.separator.dict.python",
+				"punctuation.separator.slice.python",
+				"punctuation.separator.dict.python",
+				"keyword.operator.comparison.python",
+				"punctuation.separator.colon.python",
+				"punctuation.separator.element.python",
+				"punctuation.separator.arguments.python",
+				"constant.other.ellipsis.python",
+				"punctuation.definition",
+				"punctuation.separator"
+			],
+			"settings": {
+				"foreground": "#dddddd"
+			}
+		},
+		{
+			"name": "Function",
+			"scope": [
+				"entity.name.function",
+				"support.function",
+				"support.constant.handlebars",
+				"source.powershell variable.other.member",
+				"entity.name.operator.custom-literal",
+				"punctuation.separator.annotation.result.python",
+				"punctuation.separator.parameters.python",
+				"punctuation.separator.arguments.python"
+			],
+			"settings": {
+				"foreground": "#ffda96"
+			}
+		},
+		{
+			"name": "Class - Type",
+			"scope": [
+				"support.class",
+				"support.type",
+				"entity.name.type",
+				"entity.name.namespace",
+				"entity.other.attribute",
+				"entity.name.scope-resolution",
+				"entity.name.class",
+				"storage.type.numeric.go",
+				"storage.type.byte.go",
+				"storage.type.boolean.go",
+				"storage.type.string.go",
+				"storage.type.uintptr.go",
+				"storage.type.error.go",
+				"storage.type.rune.go",
+				"storage.type.cs",
+				"storage.type.generic.cs",
+				"storage.type.modifier.cs",
+				"storage.type.variable.cs",
+				"storage.type.annotation.java",
+				"storage.type.generic.java",
+				"storage.type.java",
+				"storage.type.object.array.java",
+				"storage.type.primitive.array.java",
+				"storage.type.primitive.java",
+				"storage.type.token.java",
+				"storage.type.groovy",
+				"storage.type.annotation.groovy",
+				"storage.type.parameters.groovy",
+				"storage.type.generic.groovy",
+				"storage.type.object.array.groovy",
+				"storage.type.primitive.array.groovy",
+				"storage.type.primitive.groovy"
+			],
+			"settings": {
+				"foreground": "#5DEED1"
+			}
+		},
+		{
+			"name": "Variables",
+			"scope": [
+				"variable",
+				"meta.definition.variable.name",
+				"support.variable",
+				"entity.name.variable",
+				"constant.other.placeholder",
+				"variable.other.constant"
+			],
+			"settings": {
+				"foreground": "#9CDCFE"
+			}
+		},
+		{
+			"name": "Function Parameters",
+			"scope": [
+				"variable.parameter"
+			],
+			"settings": {
+				"foreground": "#4FC1FF"
+			}
+		},
+		{
+			"name": "self & cls",
+			"scope": [
+				"variable.parameter.function.language.special.self.python",
+				"variable.parameter.function.language.special.cls.python"
+			],
+			"settings": {
+				"foreground": "#569CD6"
+			}
+		},
+		{
+			"name": "Booleans & None",
+			"scope": [
+				"constant.language.python"
+			],
+			"settings": {
+				"foreground": "#5DEED1"
+			}
+		},
+		{
+			"name": "Modules",
+			"scope": [
+				"entity.name.namespace"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "Bitwise",
+			"scope": [
+				"keyword.operator.bitwise.python"
+			],
+			"settings": {
+				"foreground": "#A4B1CD"
+			}
+		},
+		{
+			"scope": [
+				"meta.function.decorator.python entity.name.function.decorator.python"
+			],
+			"settings": {
+				"foreground": "#ac9b8b"
 			}
 		},
 		{
@@ -1143,159 +1340,6 @@
 			],
 			"settings": {
 				"foreground": "#ffda96"
-			}
-		},
-		{
-			"name": "Variable Language",
-			"scope": "variable.language",
-			"settings": {
-				"foreground": "#569CD6"
-			}
-		},
-		{
-			"name": "Definitions: classes & functions",
-			"scope": [
-				"storage.type.class",
-				"storage.type.function"
-			],
-			"settings": {
-				"foreground": "#F87F7F"
-			}
-		},
-		{
-			"name": "Function",
-			"scope": [
-				"entity.name.function",
-				"support.function",
-				"support.constant.handlebars",
-				"source.powershell variable.other.member",
-				"entity.name.operator.custom-literal",
-				"punctuation.separator.annotation.result.python",
-				"punctuation.separator.parameters.python",
-				"punctuation.separator.arguments.python"
-			],
-			"settings": {
-				"foreground": "#ffda96"
-			}
-		},
-		{
-			"name": "Class - Type",
-			"scope": [
-				"support.class",
-				"support.type",
-				"entity.name.type",
-				"entity.name.namespace",
-				"entity.other.attribute",
-				"entity.name.scope-resolution",
-				"entity.name.class",
-				"storage.type.numeric.go",
-				"storage.type.byte.go",
-				"storage.type.boolean.go",
-				"storage.type.string.go",
-				"storage.type.uintptr.go",
-				"storage.type.error.go",
-				"storage.type.rune.go",
-				"storage.type.cs",
-				"storage.type.generic.cs",
-				"storage.type.modifier.cs",
-				"storage.type.variable.cs",
-				"storage.type.annotation.java",
-				"storage.type.generic.java",
-				"storage.type.java",
-				"storage.type.object.array.java",
-				"storage.type.primitive.array.java",
-				"storage.type.primitive.java",
-				"storage.type.token.java",
-				"storage.type.groovy",
-				"storage.type.annotation.groovy",
-				"storage.type.parameters.groovy",
-				"storage.type.generic.groovy",
-				"storage.type.object.array.groovy",
-				"storage.type.primitive.array.groovy",
-				"storage.type.primitive.groovy",
-				"punctuation.definition",
-				"punctuation.separator"
-			],
-			"settings": {
-				"foreground": "#5DEED1"
-			}
-		},
-		{
-			"name": "Control Flow",
-			"scope": [
-				"keyword.control",
-				"source.cpp keyword.operator.new",
-				"keyword.operator.delete",
-				"keyword.other.using",
-				"keyword.other.directive.using",
-				"keyword.other.operator",
-				"entity.name.operator",
-				"constant.other.ellipsis.python",
-				"keyword.operator.logical.python",
-				"punctuation.separator.colon.python"
-			],
-			"settings": {
-				"foreground": "#d79bff"
-			}
-		},
-		{
-			"name": "Variables",
-			"scope": [
-				"variable",
-				"meta.definition.variable.name",
-				"support.variable",
-				"entity.name.variable",
-				"constant.other.placeholder",
-				"variable.other.constant"
-			],
-			"settings": {
-				"foreground": "#9CDCFE"
-			}
-		},
-		{
-			"name": "Function Parameters",
-			"scope": [
-				"variable.parameter"
-			],
-			"settings": {
-				"foreground": "#4FC1FF"
-			}
-		},
-		{
-			"name": "self & cls",
-			"scope": [
-				"variable.parameter.function.language.special.self.python",
-				"variable.parameter.function.language.special.cls.python"
-			],
-			"settings": {
-				"foreground": "#569CD6"
-			}
-		},
-		{
-			"name": "Booleans & None",
-			"scope": [
-				"constant.language.python"
-			],
-			"settings": {
-				"foreground": "#5DEED1"
-			}
-		},
-		{
-			"name": "Modules",
-			"scope": [
-				"entity.name.namespace"
-			],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		},
-		{
-			"name": "Bitwise",
-			"scope": [
-				"keyword.operator.bitwise.python"
-			],
-			"settings": {
-				"foreground": "#A4B1CD"
 			}
 		},
 		{
@@ -1637,6 +1681,10 @@
 		}
 	],
 	"semanticTokenColors": {
-		"variable.defaultLibrary:javascript": "#5DEED1"
+		"variable.defaultLibrary:javascript": "#5DEED1",
+		"class.typeHint.builtin:python": "#5DEED1",
+		"class.decorator.builtin:python": "#3fa591",
+		"function.decorator.builtin:python": "#3fa591",
+		"function.decorator": "#ac9b8b"
 	}
 }
