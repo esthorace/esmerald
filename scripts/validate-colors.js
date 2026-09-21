@@ -78,7 +78,7 @@ function validateLanguageFactories(themeType, palette) {
     const value = validateFactory(
       path.join("src", "languages", file),
       palette,
-      ["tokenColors", "semanticTokenColors"],
+      ["tokenColors"],
     );
     validateNoHexLiterals(path.join("src", "languages", file));
     if (!Array.isArray(value.tokenColors)) {

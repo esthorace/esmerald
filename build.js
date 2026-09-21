@@ -62,8 +62,40 @@ function sortSemanticTokenColors(semanticTokenColors) {
   );
 }
 
+function stableValue(value) {
+  if (Array.isArray(value)) return value.map(stableValue);
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.keys(value)
+        .sort()
+        .map((key) => [key, stableValue(value[key])]),
+    );
+  }
+  return value;
+}
+
+function groupTokenColors(tokenColors) {
+  const groups = new Map();
+
+  for (const rule of tokenColors) {
+    const settings = rule.settings || {};
+    const key = JSON.stringify(stableValue(settings));
+    if (!groups.has(key)) {
+      groups.set(key, { scope: new Set(), settings });
+    }
+
+    const scopes = Array.isArray(rule.scope) ? rule.scope : [rule.scope];
+    scopes.forEach((scope) => groups.get(key).scope.add(scope));
+  }
+
+  return [...groups.values()].map(({ scope, settings }) => ({
+    scope: [...scope].sort(),
+    settings,
+  }));
+}
+
 function sortTokenColors(tokenColors) {
-  return tokenColors
+  return groupTokenColors(tokenColors)
     .map((rule, index) => ({ rule, index }))
     .sort(
       (
