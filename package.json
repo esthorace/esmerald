@@ -55,6 +55,10 @@
     "@vscode/vsce": "^4.0.0"
   },
   "scripts": {
+    "build": "node build.js",
+    "validate": "node scripts/validate-colors.js",
+    "check": "pnpm build && pnpm validate",
+    "group": "node scripts/group-token-scopes.js",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"
   },
