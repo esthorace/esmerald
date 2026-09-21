@@ -58,6 +58,7 @@
     "build": "node build.js",
     "validate": "node scripts/validate-colors.js",
     "check": "pnpm build && pnpm validate",
+    "split": "node scripts/split-language-scopes.js",
     "group": "node scripts/group-token-scopes.js",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"

@@ -75,11 +75,20 @@ pnpm publish
 
 ### Cambios en scopes
 
-Usar este comando únicamente después de modificar las reglas de scopes en `src/languages/_dark_base.js` o `src/languages/_light_base.js`:
+Los módulos de lenguaje se separan por nombre: `python_dark.js`, `django_light.js`, `react_dark.js`, etc. Si agregas o modificas scopes en las bases y necesitas redistribuirlos por lenguaje, ejecuta:
+
+```bash
+pnpm split
+pnpm check
+```
+
+`pnpm split` aplica la prioridad de lenguajes, por ejemplo React/JSX sobre JavaScript y Django sobre HTML.
+
+Si solo necesitas volver a agrupar scopes que tienen exactamente el mismo objeto `settings`, ejecuta:
 
 ```bash
 pnpm group
 pnpm check
 ```
 
-No ejecutar `pnpm group` solo por cambiar un color: ese comando reagrupa y reescribe las reglas `tokenColors`.
+No ejecutes `pnpm split` ni `pnpm group` por cambiar únicamente un color: en ese caso basta con `pnpm check`.
