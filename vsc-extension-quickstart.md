@@ -17,6 +17,14 @@ Las paletas están separadas por tema:
 
 Las reglas de interfaz están en `src/ui_dark.js` y `src/ui_light.js`. Las reglas de sintaxis están en `src/languages/_dark_base.js` y `src/languages/_light_base.js`. El archivo `build.js` combina estas fuentes y genera `themes/esmerald.json` y `themes/esmerald-light.json`.
 
+El build descubre automáticamente todos los archivos `.js` de `src/languages`:
+
+- Un archivo que termine en `_dark.js` o `_dark_base.js` se agrega al tema oscuro.
+- Un archivo que termine en `_light.js` o `_light_base.js` se agrega al tema claro.
+- Cualquier otro archivo `.js` produce un error para evitar que una regla quede fuera del build por accidente.
+
+Por ejemplo, `python_dark.js`, `javascript_light.js`, `_dark_base.js` y `_light_base.js` son nombres válidos.
+
 ## Comandos principales
 
 ```bash

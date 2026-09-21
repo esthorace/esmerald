@@ -3,18 +3,115 @@ const path = require("path");
 
 const darkPalette = require("./src/dark_palette");
 const lightPalette = require("./src/light_palette");
+const languageDir = path.join(__dirname, "src", "languages");
+const colorMarker = /^__COLOR__([A-Za-z_$][A-Za-z0-9_$]*)__$/;
 
-function loadFactory(fileName, colors) {
-  return require(path.join(__dirname, fileName))(colors);
+function classifyLanguageFile(file) {
+  if (!file.endsWith(".js")) return null;
+  if (/_dark\.js$|_dark_base\.js$/.test(file)) return "dark";
+  if (/_light\.js$|_light_base\.js$/.test(file)) return "light";
+  throw new Error(
+    `Archivo de lenguaje no clasificable: src/languages/${file}. ` +
+      "Debe terminar en _dark.js, _dark_base.js, _light.js o _light_base.js.",
+  );
 }
 
-function buildTheme(themeName, themeType, uiFile, languageFile, colors) {
+function trackedColors(colors) {
+  return new Proxy(colors, {
+    get(target, property) {
+      if (typeof property !== "string") return undefined;
+      return `${"__COLOR__"}${property}__`;
+    },
+  });
+}
+
+function resolveColors(value, colors) {
+  if (typeof value === "string") {
+    const match = value.match(colorMarker);
+    if (!match) return value;
+    if (!(match[1] in colors)) {
+      throw new Error(`Variable de color inexistente: colors.${match[1]}`);
+    }
+    return colors[match[1]];
+  }
+  if (Array.isArray(value))
+    return value.map((item) => resolveColors(item, colors));
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [
+        key,
+        resolveColors(item, colors),
+      ]),
+    );
+  }
+  return value;
+}
+
+function languageFiles(themeType) {
+  return fs
+    .readdirSync(languageDir)
+    .filter((file) => classifyLanguageFile(file) === themeType)
+    .sort();
+}
+
+function sortSemanticTokenColors(semanticTokenColors) {
+  return Object.fromEntries(
+    Object.entries(semanticTokenColors).sort(([left], [right]) =>
+      left < right ? -1 : left > right ? 1 : 0,
+    ),
+  );
+}
+
+function sortTokenColors(tokenColors) {
+  return tokenColors
+    .map((rule, index) => ({ rule, index }))
+    .sort(
+      (
+        { rule: left, index: leftIndex },
+        { rule: right, index: rightIndex },
+      ) => {
+        const leftName =
+          left.settings?.foreground?.match(colorMarker)?.[1] || "";
+        const rightName =
+          right.settings?.foreground?.match(colorMarker)?.[1] || "";
+        if (!leftName && !rightName) return leftIndex - rightIndex;
+        if (!leftName) return 1;
+        if (!rightName) return -1;
+        return leftName < rightName
+          ? -1
+          : leftName > rightName
+            ? 1
+            : leftIndex - rightIndex;
+      },
+    )
+    .map(({ rule }) => rule);
+}
+
+function loadLanguageRules(themeType, colors) {
+  const tokenColors = [];
+  const semanticTokenColors = {};
+
+  for (const file of languageFiles(themeType)) {
+    const rules = require(path.join(languageDir, file))(trackedColors(colors));
+    tokenColors.push(...(rules.tokenColors || []));
+    Object.assign(semanticTokenColors, rules.semanticTokenColors || {});
+  }
+
+  return {
+    tokenColors: sortTokenColors(tokenColors),
+    semanticTokenColors: sortSemanticTokenColors(semanticTokenColors),
+  };
+}
+
+function buildTheme(themeName, themeType, uiFile, colors) {
+  const ui = require(path.join(__dirname, uiFile))(colors);
+  const languageRules = loadLanguageRules(themeType, colors);
   return {
     name: themeName,
     type: themeType,
     semanticHighlighting: true,
-    ...loadFactory(uiFile, colors),
-    ...loadFactory(languageFile, colors),
+    ...ui,
+    ...resolveColors(languageRules, colors),
   };
 }
 
@@ -28,13 +125,7 @@ if (!fs.existsSync(outputDir)) {
 fs.writeFileSync(
   path.join(outputDir, "esmerald.json"),
   JSON.stringify(
-    buildTheme(
-      "Esmerald",
-      "dark",
-      "src/ui_dark.js",
-      "src/languages/_dark_base.js",
-      darkPalette,
-    ),
+    buildTheme("Esmerald", "dark", "src/ui_dark.js", darkPalette),
     null,
     2,
   ),
@@ -43,13 +134,7 @@ fs.writeFileSync(
 fs.writeFileSync(
   path.join(outputDir, "esmerald-light.json"),
   JSON.stringify(
-    buildTheme(
-      "Esmerald Light",
-      "light",
-      "src/ui_light.js",
-      "src/languages/_light_base.js",
-      lightPalette,
-    ),
+    buildTheme("Esmerald Light", "light", "src/ui_light.js", lightPalette),
     null,
     2,
   ),

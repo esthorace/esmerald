@@ -4,6 +4,7 @@ const path = require("path");
 const root = path.join(__dirname, "..");
 const darkPalette = require(path.join(root, "src", "dark_palette"));
 const lightPalette = require(path.join(root, "src", "light_palette"));
+const languageDir = path.join(root, "src", "languages");
 const hexPattern = /^#[0-9a-fA-F]{6}(?:[0-9a-fA-F]{2})?$/;
 const invalidHexPattern = /#[0-9a-fA-F]+/g;
 
@@ -53,6 +54,39 @@ function validateNoHexLiterals(file) {
   }
 }
 
+function languageFiles(themeType) {
+  return fs
+    .readdirSync(languageDir)
+    .filter((file) => {
+      if (!file.endsWith(".js")) return false;
+      if (/_dark\.js$|_dark_base\.js$/.test(file)) return themeType === "dark";
+      if (/_light\.js$|_light_base\.js$/.test(file))
+        return themeType === "light";
+      throw new Error(
+        `Archivo de lenguaje no clasificable: src/languages/${file}`,
+      );
+    })
+    .sort();
+}
+
+function validateLanguageFactories(themeType, palette) {
+  const files = languageFiles(themeType);
+  if (!files.length)
+    throw new Error(`No hay archivos de lenguaje para ${themeType}`);
+
+  files.forEach((file) => {
+    const value = validateFactory(
+      path.join("src", "languages", file),
+      palette,
+      ["tokenColors", "semanticTokenColors"],
+    );
+    validateNoHexLiterals(path.join("src", "languages", file));
+    if (!Array.isArray(value.tokenColors)) {
+      throw new Error(`${file}: tokenColors debe ser un array`);
+    }
+  });
+}
+
 const darkColors = paletteValues(darkPalette);
 const lightColors = paletteValues(lightPalette);
 const darkUi = validateFactory("src/ui_dark.js", darkPalette, [
@@ -65,30 +99,15 @@ const lightUi = validateFactory("src/ui_light.js", lightPalette, [
   "type",
   "colors",
 ]);
-const darkBase = validateFactory("src/languages/_dark_base.js", darkPalette, [
-  "tokenColors",
-  "semanticTokenColors",
-]);
-const lightBase = validateFactory(
-  "src/languages/_light_base.js",
-  lightPalette,
-  ["tokenColors", "semanticTokenColors"],
-);
+validateLanguageFactories("dark", darkPalette);
+validateLanguageFactories("light", lightPalette);
 
-const activeFiles = [
-  "src/ui_dark.js",
-  "src/ui_light.js",
-  "src/languages/_dark_base.js",
-  "src/languages/_light_base.js",
-];
+const activeFiles = ["src/ui_dark.js", "src/ui_light.js"];
 activeFiles.forEach(validateNoHexLiterals);
 
-const generated = [
-  ["themes/esmerald.json", { ...darkUi, ...darkBase }],
-  ["themes/esmerald-light.json", { ...lightUi, ...lightBase }],
-];
+const generated = ["themes/esmerald.json", "themes/esmerald-light.json"];
 
-for (const [file, value] of generated) {
+for (const file of generated) {
   const output = JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
   const used = collectValues(output);
   const colors = file.includes("light") ? lightColors : darkColors;
