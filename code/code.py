@@ -21,6 +21,8 @@ a = {2, 3, 4}
 
 function(num1=12, num2=2)  # comment
 
+print(f"fefe{dfd}")
+
 
 class Person:
     def __init__(self, name: str) -> None:

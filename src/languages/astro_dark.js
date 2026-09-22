@@ -3,21 +3,16 @@ module.exports = function createColors(colors) {
     tokenColors: [
       {
         scope: [
-          "punctuation.definition.tag.begin.js.jsx",
-          "punctuation.definition.tag.end.js.jsx",
+          "punctuation.definition.string.begin.astro",
+          "punctuation.definition.string.end.astro",
+          "punctuation.separator.key-value.astro",
         ],
         settings: {
           foreground: colors.rojoMedioVivo,
         },
       },
       {
-        scope: ["keyword.operator.logical.js.jsx"],
-        settings: {
-          foreground: colors.text_violet,
-        },
-      },
-      {
-        scope: ["meta.jsx.children.js.jsx"],
+        scope: ["source.astro meta.embedded.expression.astro", "text.astro"],
         settings: {
           foreground: colors.text_white_light,
         },

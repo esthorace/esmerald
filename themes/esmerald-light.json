@@ -262,15 +262,6 @@
     },
     {
       "scope": [
-        "heading.4.markdown",
-        "heading.4.markdown punctuation.definition.heading.markdown"
-      ],
-      "settings": {
-        "foreground": "#9cdcfe"
-      }
-    },
-    {
-      "scope": [
         "comment.line"
       ],
       "settings": {
@@ -295,21 +286,6 @@
       "settings": {
         "foreground": "#fafbfe",
         "fontStyle": "italic underline"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.definition.string.begin.html",
-        "punctuation.definition.string.begin.html source.css",
-        "punctuation.definition.string.end.html",
-        "punctuation.definition.string.end.html source.css",
-        "punctuation.separator.key-value.html",
-        "string.quoted.double.begin.django",
-        "string.quoted.double.end.django",
-        "string.quoted.double.html"
-      ],
-      "settings": {
-        "foreground": "#569cd6"
       }
     },
     {
@@ -558,15 +534,6 @@
     },
     {
       "scope": [
-        "heading.3.markdown",
-        "heading.3.markdown punctuation.definition.heading.markdown"
-      ],
-      "settings": {
-        "foreground": "#ffda96"
-      }
-    },
-    {
-      "scope": [
         "entity.name.function.member",
         "heading.3.markdown entity.name.section.markdown",
         "heading.3.markdown punctuation.definition.heading.markdown"
@@ -669,15 +636,6 @@
     },
     {
       "scope": [
-        "heading.2.markdown",
-        "heading.2.markdown punctuation.definition.heading.markdown"
-      ],
-      "settings": {
-        "foreground": "#ff8f8f"
-      }
-    },
-    {
-      "scope": [
         "string.quoted.double.django",
         "string.quoted.single.django"
       ],
@@ -729,6 +687,48 @@
       ],
       "settings": {
         "foreground": "#cd3131"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.string.begin.html",
+        "punctuation.definition.string.begin.html source.css",
+        "punctuation.definition.string.end.html",
+        "punctuation.definition.string.end.html source.css",
+        "punctuation.separator.key-value.html",
+        "string.quoted.double.begin.django",
+        "string.quoted.double.end.django",
+        "string.quoted.double.html"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "scope": [
+        "heading.4.markdown",
+        "heading.4.markdown punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#9cdcfe"
+      }
+    },
+    {
+      "scope": [
+        "heading.3.markdown",
+        "heading.3.markdown punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#ffda96"
+      }
+    },
+    {
+      "scope": [
+        "heading.2.markdown",
+        "heading.2.markdown punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#b40202"
       }
     },
     {

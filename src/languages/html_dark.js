@@ -2,10 +2,12 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
-        scope: ["invalid.deprecated.entity.other.attribute-name.html"],
+        scope: [
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html",
+        ],
         settings: {
-          foreground: colors.azulClaroBrillante,
-          fontStyle: "strikethrough",
+          foreground: colors.rojoMedioVivo,
         },
       },
       {
@@ -15,14 +17,7 @@ module.exports = function createColors(colors) {
           "text.html.jinja string.quoted.double.html",
         ],
         settings: {
-          foreground: colors.azulCodigo,
-        },
-      },
-      {
-        scope: ["comment.block.html", "punctuation.definition.comment.html"],
-        settings: {
-          foreground: colors.azulMedioVivo12,
-          fontStyle: "italic",
+          foreground: colors.text_blue_dark,
         },
       },
       {
@@ -31,22 +26,27 @@ module.exports = function createColors(colors) {
           "text.html.derivative punctuation.definition.string",
         ],
         settings: {
-          foreground: colors.azulMedioVivo3,
+          foreground: colors.text_blue_deep,
+        },
+      },
+      {
+        scope: ["invalid.deprecated.entity.other.attribute-name.html"],
+        settings: {
+          foreground: colors.text_blue_light,
+          fontStyle: "strikethrough",
+        },
+      },
+      {
+        scope: ["comment.block.html", "punctuation.definition.comment.html"],
+        settings: {
+          foreground: colors.text_violet_deep,
+          fontStyle: "italic",
         },
       },
       {
         scope: ["text.html.derivative", "text.html.jinja"],
         settings: {
-          foreground: colors.blanco,
-        },
-      },
-      {
-        scope: [
-          "punctuation.definition.tag.begin.html",
-          "punctuation.definition.tag.end.html",
-        ],
-        settings: {
-          foreground: colors.rojoMedioVivo,
+          foreground: colors.text_white_light,
         },
       },
     ],

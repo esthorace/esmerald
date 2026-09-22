@@ -5,3 +5,9 @@ node_modules/**
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+scripts/
+src/
+build.js
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.python-version

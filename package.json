@@ -1,7 +1,7 @@
 {
   "name": "python-theme",
   "displayName": "Esmerald",
-  "version": "2.10.0",
+  "version": "2.11.1",
   "license": "MIT",
   "publisher": "esthorace",
   "description": "It's a beautiful theme",
@@ -52,14 +52,17 @@
     "type": "git"
   },
   "dependencies": {
-    "@vscode/vsce": "^4.0.0"
+    "@vscode/vsce": "^4.0.0",
+    "approve-builds": "^1.0.0",
+    "prettier": "^3.9.8"
   },
   "scripts": {
     "build": "node build.js",
     "validate": "node scripts/validate-colors.js",
-    "check": "pnpm build && pnpm validate",
     "split": "node scripts/split-language-scopes.js",
     "group": "node scripts/group-token-scopes.js",
+    "format": "prettier --write \"src/**/*\"",
+    "ejecutar": "pnpm validate && pnpm group && pnpm split && pnpm build && pnpm format",
     "package": "pnpm vsce package --no-dependencies",
     "publish": "pnpm vsce publish --no-dependencies"
   },

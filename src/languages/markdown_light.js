@@ -3,29 +3,11 @@ module.exports = function createColors(colors) {
     tokenColors: [
       {
         scope: [
-          "heading.4.markdown",
-          "heading.4.markdown punctuation.definition.heading.markdown",
-        ],
-        settings: {
-          foreground: colors.azulClaroBrillante,
-        },
-      },
-      {
-        scope: [
           "heading.4.markdown entity.name.section.markdown",
           "heading.4.markdown punctuation.definition.heading.markdown",
         ],
         settings: {
           foreground: colors.azulMedioVivo,
-        },
-      },
-      {
-        scope: [
-          "heading.3.markdown",
-          "heading.3.markdown punctuation.definition.heading.markdown",
-        ],
-        settings: {
-          foreground: colors.naranjaClaroBrillante2,
         },
       },
       {
@@ -55,20 +37,38 @@ module.exports = function createColors(colors) {
       },
       {
         scope: [
-          "heading.2.markdown",
-          "heading.2.markdown punctuation.definition.heading.markdown",
-        ],
-        settings: {
-          foreground: colors.rojoClaroBrillante3,
-        },
-      },
-      {
-        scope: [
           "heading.2.markdown entity.name.section.markdown",
           "heading.2.markdown punctuation.definition.heading.markdown",
         ],
         settings: {
           foreground: colors.rojoMedioBrillante4,
+        },
+      },
+      {
+        scope: [
+          "heading.4.markdown",
+          "heading.4.markdown punctuation.definition.heading.markdown",
+        ],
+        settings: {
+          foreground: colors.text_blue_light,
+        },
+      },
+      {
+        scope: [
+          "heading.3.markdown",
+          "heading.3.markdown punctuation.definition.heading.markdown",
+        ],
+        settings: {
+          foreground: colors.text_gold,
+        },
+      },
+      {
+        scope: [
+          "heading.2.markdown",
+          "heading.2.markdown punctuation.definition.heading.markdown",
+        ],
+        settings: {
+          foreground: colors.text_red,
         },
       },
     ],

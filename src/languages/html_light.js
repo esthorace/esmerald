@@ -2,17 +2,6 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
-        scope: [
-          "punctuation.definition.string.begin.html",
-          "punctuation.definition.string.end.html",
-          "punctuation.separator.key-value.html",
-          "string.quoted.double.html",
-        ],
-        settings: {
-          foreground: colors.azulCodigo,
-        },
-      },
-      {
         scope: ["entity.other.attribute-name.html"],
         settings: {
           foreground: colors.naranjaMedioVivo6,
@@ -32,6 +21,17 @@ module.exports = function createColors(colors) {
         ],
         settings: {
           foreground: colors.rojoMedioBrillante4,
+        },
+      },
+      {
+        scope: [
+          "punctuation.definition.string.begin.html",
+          "punctuation.definition.string.end.html",
+          "punctuation.separator.key-value.html",
+          "string.quoted.double.html",
+        ],
+        settings: {
+          foreground: colors.text_blue_dark,
         },
       },
     ],

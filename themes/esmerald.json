@@ -33,7 +33,7 @@
     "charts.green": "#9fef00",
     "charts.lines": "#a4b1cd",
     "charts.orange": "#2ee7b6",
-    "charts.purple": "#9f00ff",
+    "charts.purple": "#caacf1",
     "charts.red": "#dcaaaa",
     "charts.yellow": "#ffaf00",
     "chat.slashCommandBackground": "#34414b",
@@ -285,14 +285,14 @@
     "terminal.ansiBrightBlue": "#5cb2ffd0",
     "terminal.ansiBrightCyan": "#5cecc6d0",
     "terminal.ansiBrightGreen": "#c5f467d0",
-    "terminal.ansiBrightMagenta": "#c290e4d0",
+    "terminal.ansiBrightMagenta": "#caacf1",
     "terminal.ansiBrightRed": "#f3aeaed0",
     "terminal.ansiBrightWhite": "#bababa",
     "terminal.ansiBrightYellow": "#edc97a",
     "terminal.ansiCyan": "#9fdada",
-    "terminal.ansiGreen": "#95b35b",
+    "terminal.ansiGreen": "#82a35d",
     "terminal.ansiMagenta": "#794a97",
-    "terminal.ansiRed": "#f87f7f",
+    "terminal.ansiRed": "#ff8f8f",
     "terminal.ansiWhite": "#e4e4e4",
     "terminal.ansiYellow": "#cfb272",
     "terminal.background": "#121c2b",
@@ -336,120 +336,6 @@
   "tokenColors": [
     {
       "scope": [
-        "constant.language.python",
-        "constant.other.placeholder",
-        "entity.name.variable",
-        "entity.other.attribute-name",
-        "heading.4.markdown",
-        "heading.4.markdown punctuation.definition.heading.markdown",
-        "meta.definition.variable.name",
-        "meta.function-call.arguments.python keyword.operator.assignment.python",
-        "meta.object-literal.key",
-        "meta.structure.dictionary.key.python",
-        "source.coffee.embedded",
-        "source.css variable",
-        "string.other.link.title.markdown",
-        "support.function.git-rebase",
-        "support.type.property-name",
-        "support.type.vendored.property-name",
-        "support.variable",
-        "variable",
-        "variable.other.constant"
-      ],
-      "settings": {
-        "foreground": "#9cdcfe"
-      }
-    },
-    {
-      "scope": [
-        "invalid.deprecated.entity.other.attribute-name.html"
-      ],
-      "settings": {
-        "foreground": "#9cdcfe",
-        "fontStyle": "strikethrough"
-      }
-    },
-    {
-      "scope": [
-        "constant.character",
-        "constant.other.option",
-        "entity.name.function.preprocessor",
-        "keyword.operator.alignas",
-        "keyword.operator.alignof",
-        "keyword.operator.cast",
-        "keyword.operator.expression",
-        "keyword.operator.instanceof",
-        "keyword.operator.logical.python",
-        "keyword.operator.new",
-        "keyword.operator.noexcept",
-        "keyword.operator.sizeof",
-        "keyword.operator.typeid",
-        "keyword.operator.wordlike",
-        "markup.changed",
-        "meta.diff.header",
-        "meta.preprocessor",
-        "punctuation.definition.template-expression.begin",
-        "punctuation.definition.template-expression.end",
-        "punctuation.section.embedded",
-        "punctuation.section.embedded.begin.php",
-        "punctuation.section.embedded.end.php",
-        "punctuation.terminator.statement",
-        "storage",
-        "storage.modifier",
-        "storage.type",
-        "text.html.derivative string.quoted.double.html",
-        "text.html.django meta.tag.block.any.html",
-        "text.html.django meta.tag.block.any.html string.quoted.double.html",
-        "text.html.django meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.begin.html",
-        "text.html.django meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.end.html",
-        "text.html.django meta.tag.inline.any.html",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.begin.html",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.end.html",
-        "text.html.jinja punctuation.definition.string",
-        "text.html.jinja string.quoted.double.html",
-        "variable.language",
-        "variable.parameter.function.language.special.cls.python",
-        "variable.parameter.function.language.special.self.python"
-      ],
-      "settings": {
-        "foreground": "#569cd6"
-      }
-    },
-    {
-      "scope": [
-        "markup.italic"
-      ],
-      "settings": {
-        "foreground": "#569cd6",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "markup.bold",
-        "markup.heading"
-      ],
-      "settings": {
-        "foreground": "#569cd6",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": [
-        "constant.language",
-        "meta.function-call.arguments.python",
-        "variable.other.constant",
-        "variable.other.enummember",
-        "variable.other.property.go",
-        "variable.parameter"
-      ],
-      "settings": {
-        "foreground": "#4fc1ff"
-      }
-    },
-    {
-      "scope": [
         "constant.other.reference.link.markdown"
       ],
       "settings": {
@@ -466,75 +352,10 @@
     },
     {
       "scope": [
-        "comment"
-      ],
-      "settings": {
-        "foreground": "#5f697c",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
         "constant.regexp"
       ],
       "settings": {
         "foreground": "#646695"
-      }
-    },
-    {
-      "scope": [
-        "comment.block.html",
-        "comment.line.number-sign.python",
-        "fenced_code.block.language",
-        "markup.fenced_code.block.markdown punctuation.definition.markdown",
-        "markup.italic.markdown punctuation.definition",
-        "punctuation.definition.bold.markdown",
-        "punctuation.definition.comment",
-        "punctuation.definition.comment.html",
-        "punctuation.definition.link.title.begin.markdown",
-        "punctuation.definition.link.title.end.markdown",
-        "punctuation.definition.raw.markdown",
-        "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
-        "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
-      ],
-      "settings": {
-        "foreground": "#627ab6",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "comment.block",
-        "string.quoted.docstring.multi.python",
-        "string.quoted.docstring.single.python"
-      ],
-      "settings": {
-        "foreground": "#889eda"
-      }
-    },
-    {
-      "scope": [
-        "fenced_code.block.language",
-        "markup.underline.link.markdown",
-        "punctuation.definition.metadata.markdown",
-        "punctuation.definition.string.begin.astro",
-        "punctuation.definition.string.end.astro",
-        "punctuation.separator.key-value.astro",
-        "punctuation.separator.key-value.html",
-        "text.html.derivative punctuation.definition.string"
-      ],
-      "settings": {
-        "foreground": "#2a6696"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.definition.comment",
-        "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
-        "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
-      ],
-      "settings": {
-        "foreground": "#889eda7c"
       }
     },
     {
@@ -565,49 +386,16 @@
     },
     {
       "scope": [
-        "constant.language.boolean.go",
-        "constant.other.ellipsis.python",
-        "entity.name.namespace",
-        "heading.1.markdown",
-        "heading.1.markdown punctuation.definition.heading.markdown",
-        "keyword.operator.assignment.python",
-        "meta.jsx.children.js.jsx",
-        "punctuation.definition",
-        "punctuation.definition.dict.begin.python",
-        "punctuation.definition.dict.end.python",
-        "punctuation.definition.inheritance.begin.python",
-        "punctuation.definition.inheritance.end.python",
-        "punctuation.definition.list.begin.python",
-        "punctuation.definition.list.end.python",
-        "punctuation.parenthesis.begin.python",
-        "punctuation.parenthesis.end.python",
-        "punctuation.separator",
-        "punctuation.separator.arguments.python",
-        "punctuation.separator.element.python",
-        "punctuation.separator.slice.python",
-        "source.astro meta.embedded.expression.astro",
-        "source.go keyword.operator.assignment",
-        "text.astro",
-        "text.html.derivative",
-        "text.html.django",
-        "text.html.jinja"
+        "invalid",
+        "token.error-token"
       ],
       "settings": {
-        "foreground": "#ffffff"
+        "foreground": "#ff3e3e"
       }
     },
     {
       "scope": [
-        "entity.name.type.package.go"
-      ],
-      "settings": {
-        "foreground": "#ffffff",
-        "fontStyle": ""
-      }
-    },
-    {
-      "scope": [
-        "entity.name.label"
+        ""
       ],
       "settings": {
         "foreground": "#c8c8c8"
@@ -618,11 +406,7 @@
         "meta.embedded",
         "meta.template.expression",
         "source.groovy.embedded",
-        "storage.modifier.import.java",
-        "storage.modifier.package.java",
-        "string meta.image.inline.markdown",
-        "variable.language.wildcard.java",
-        "variable.legacy.builtin.python"
+        "string meta.image.inline.markdown"
       ],
       "settings": {
         "foreground": "#d4d4d4"
@@ -630,8 +414,7 @@
     },
     {
       "scope": [
-        "keyword.operator",
-        "keyword.operator.bitwise.python"
+        "keyword.operator"
       ],
       "settings": {
         "foreground": "#f4f4f4"
@@ -652,66 +435,6 @@
       ],
       "settings": {
         "foreground": "#00000050"
-      }
-    },
-    {
-      "scope": [
-        "markup.bold",
-        "markup.bold string"
-      ],
-      "settings": {
-        "foreground": "#ff009d"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.function",
-        "entity.name.operator.custom-literal",
-        "entity.name.tag.css",
-        "entity.name.tag.less",
-        "entity.other.attribute-name.class.css",
-        "entity.other.attribute-name.id.css",
-        "entity.other.attribute-name.parent-selector.css",
-        "entity.other.attribute-name.parent.less",
-        "entity.other.attribute-name.pseudo-element.css",
-        "entity.other.attribute-name.scss",
-        "heading.3.markdown",
-        "heading.3.markdown punctuation.definition.heading.markdown",
-        "keyword.operator.getter.django",
-        "meta.function.decorator.python entity.name.function.decorator.python",
-        "meta.variable.structure.django",
-        "punctuation.definition.arguments.begin.python",
-        "punctuation.definition.arguments.end.python",
-        "punctuation.definition.decorator.python",
-        "punctuation.definition.list.begin.markdown",
-        "punctuation.definition.parameters.begin.python",
-        "punctuation.definition.parameters.end.python",
-        "punctuation.section.function.begin.python",
-        "punctuation.separator.annotation.result.python",
-        "punctuation.separator.arguments.python",
-        "punctuation.separator.parameters.python",
-        "source.css entity.other.attribute-name.class",
-        "source.css entity.other.attribute-name.pseudo-class",
-        "source.css.less entity.other.attribute-name.id",
-        "source.powershell variable.other.member",
-        "support.constant.handlebars",
-        "support.function",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
-        "text.html.django storage.type.templatetag.django string.unquoted.tag-string.django",
-        "text.html.django storage.type.variable.django string.unquoted.tag-string.django",
-        "variable.other.django"
-      ],
-      "settings": {
-        "foreground": "#ffda96"
-      }
-    },
-    {
-      "scope": [
-        "text.html.derivative string.quoted.double.html meta.tag.structure.django "
-      ],
-      "settings": {
-        "foreground": "#ffda96",
-        "fontStyle": ""
       }
     },
     {
@@ -760,83 +483,6 @@
     },
     {
       "scope": [
-        "entity.name.class",
-        "entity.name.namespace",
-        "entity.name.tag",
-        "entity.name.type",
-        "entity.other.attribute",
-        "heading.2.markdown",
-        "heading.2.markdown punctuation.definition.heading.markdown",
-        "keyword.control.flow.python",
-        "keyword.control.import.python",
-        "keyword.operator.assignment",
-        "keyword.operator.logical.python",
-        "meta.function.js meta.block.js meta.block.js meta.var.expr.js keyword.control.flow.js",
-        "storage.modifier.async.js",
-        "storage.modifier.declaration.python",
-        "storage.type.class.python",
-        "storage.type.function.async.python",
-        "storage.type.function.python",
-        "support.class"
-      ],
-      "settings": {
-        "foreground": "#ff8f8f"
-      }
-    },
-    {
-      "scope": [
-        "markup.bold markup.italic",
-        "markup.bold markup.italic string",
-        "markup.italic markup.bold",
-        "markup.italic markup.bold string",
-        "markup.quote markup.bold",
-        "markup.quote markup.bold string"
-      ],
-      "settings": {
-        "foreground": "#ff8f8f",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "foreground": "#ff8f8f",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "invalid"
-      ],
-      "settings": {
-        "foreground": "#ff3e3e"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control",
-        "keyword.control.import.go",
-        "keyword.map.go",
-        "keyword.operator.logical.python",
-        "keyword.package.go",
-        "keyword.struct.go",
-        "keyword.type.go",
-        "keyword.var.go",
-        "source.go keyword.function",
-        "storage.modifier.declaration.python",
-        "storage.type.class.python",
-        "storage.type.function.async.python",
-        "storage.type.function.python",
-        "token.error-token"
-      ],
-      "settings": {
-        "foreground": "#f87f7f"
-      }
-    },
-    {
-      "scope": [
         "keyword.control.anchor.regexp",
         "keyword.operator.or.regexp"
       ],
@@ -846,12 +492,13 @@
     },
     {
       "scope": [
-        "punctuation.definition.tag.begin.astro",
+        "punctuation.definition.string.begin.astro",
+        "punctuation.definition.string.end.astro",
         "punctuation.definition.tag.begin.html",
         "punctuation.definition.tag.begin.js.jsx",
-        "punctuation.definition.tag.end.astro",
         "punctuation.definition.tag.end.html",
-        "punctuation.definition.tag.end.js.jsx"
+        "punctuation.definition.tag.end.js.jsx",
+        "punctuation.separator.key-value.astro"
       ],
       "settings": {
         "foreground": "#a33c3c"
@@ -859,77 +506,187 @@
     },
     {
       "scope": [
-        "constant.character.escape.regexp",
-        "constant.numeric",
-        "keyword.operator.arithmetic.python",
-        "keyword.operator.assignment.python",
-        "keyword.operator.bitwise.python",
-        "keyword.operator.comparison.go",
-        "keyword.operator.comparison.python",
-        "keyword.operator.unpacking.arguments.python",
-        "markup.bold.markdown",
-        "markup.italic.markdown",
-        "markup.raw.block.fenced.markdown",
-        "markup.table",
-        "meta.function-call.generic.python",
-        "meta.function.parameters.python punctuation.definition.list.begin.python",
-        "meta.function.parameters.python punctuation.definition.list.end.python",
-        "meta.function.python punctuation.definition.list.begin.python",
-        "meta.function.python punctuation.definition.list.end.python",
-        "punctuation.definition.decorator.python",
-        "punctuation.definition.list_item.markdown",
-        "punctuation.section.class.end",
-        "punctuation.separator.annotation.python",
-        "punctuation.separator.dict.python",
-        "punctuation.separator.period.python",
-        "text.html.markdown",
-        "variable.language.fenced.markdown",
+        "meta.function-call.arguments.python",
+        "variable.other.property.go",
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#4fc1ff"
+      }
+    },
+    {
+      "scope": [
+        "constant.character",
+        "constant.character.escape.python",
+        "constant.other.option",
+        "keyword.operator",
+        "markup.changed",
+        "meta.diff.header",
+        "meta.fstring.python string.interpolated.python string.quoted.single.python storage.type.string.python",
+        "meta.preprocessor",
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end",
+        "punctuation.section.embedded",
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php",
+        "punctuation.terminator.statement",
+        "text.html.derivative string.quoted.double.html",
+        "text.html.django meta.tag.block.any.html",
+        "text.html.django meta.tag.block.any.html string.quoted.double.html",
+        "text.html.django meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.begin.html",
+        "text.html.django meta.tag.block.any.html string.quoted.double.html punctuation.definition.string.end.html",
+        "text.html.django meta.tag.inline.any.html",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.begin.html",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.end.html",
+        "text.html.jinja punctuation.definition.string",
+        "text.html.jinja string.quoted.double.html",
+        "variable.parameter.function.language.special.cls.python",
+        "variable.parameter.function.language.special.self.python"
+      ],
+      "settings": {
+        "foreground": "#569cd6"
+      }
+    },
+    {
+      "scope": [
+        "markup.italic"
+      ],
+      "settings": {
+        "foreground": "#569cd6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "markup.bold",
+        "markup.heading"
+      ],
+      "settings": {
+        "foreground": "#569cd6",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "markup.underline.link.markdown",
+        "punctuation.definition.metadata.markdown",
+        "punctuation.separator.key-value.html",
+        "punctuation.terminator.statement",
+        "text.html.derivative punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "#2a6696"
+      }
+    },
+    {
+      "scope": [
+        "constant.language",
+        "constant.language.python",
+        "constant.other.placeholder",
+        "entity.name.variable",
+        "entity.other.attribute-name",
+        "heading.4.markdown",
+        "heading.4.markdown punctuation.definition.heading.markdown",
+        "meta.definition.variable.name",
+        "meta.object-literal.key",
+        "meta.structure.dictionary.key.python",
+        "source.coffee.embedded",
+        "source.css variable",
+        "string.other.link.title.markdown",
+        "support.function.git-rebase",
+        "support.type.property-name",
+        "support.type.vendored.property-name",
+        "support.variable",
+        "variable",
+        "variable.other.constant",
         "variable.other.enummember"
       ],
       "settings": {
-        "foreground": "#a4b1cd"
+        "foreground": "#9cdcfe"
       }
     },
     {
       "scope": [
-        "storage.type.customtemplatetag.django",
-        "storage.type.templatetag.django",
-        "storage.type.templatetag.django entity.tag.tagbraces.django",
-        "storage.type.variable.django"
+        "invalid.deprecated.entity.other.attribute-name.html"
       ],
       "settings": {
-        "foreground": "#08c19c"
+        "foreground": "#9cdcfe",
+        "fontStyle": "strikethrough"
       }
     },
     {
       "scope": [
-        "meta.function-call.arguments.python punctuation.definition.list.begin.python",
-        "meta.function-call.arguments.python punctuation.definition.list.end.python",
-        "meta.function.python punctuation.definition.list.begin.python",
-        "meta.function.python punctuation.definition.list.end.python",
-        "meta.item-access.python punctuation.definition.arguments.begin.python",
-        "meta.item-access.python punctuation.definition.arguments.end.python",
-        "punctuation.accessor.js",
-        "punctuation.definition.begin.bracket.curly.go",
-        "punctuation.definition.begin.bracket.round.go",
-        "punctuation.definition.end.bracket.curly.go",
-        "punctuation.definition.end.bracket.round.go"
+        "entity.name.function",
+        "entity.name.operator.custom-literal",
+        "entity.name.tag.css",
+        "entity.name.tag.less",
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.id.css",
+        "entity.other.attribute-name.parent-selector.css",
+        "entity.other.attribute-name.parent.less",
+        "entity.other.attribute-name.pseudo-element.css",
+        "entity.other.attribute-name.scss",
+        "heading.3.markdown",
+        "heading.3.markdown punctuation.definition.heading.markdown",
+        "keyword.operator.getter.django",
+        "meta.arrow.js meta.block.js meta.brace.round.js",
+        "meta.function.decorator.python entity.name.function.decorator.python",
+        "meta.function.js meta.block.js meta.brace.round.js",
+        "meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js",
+        "meta.function.js meta.parameters.js punctuation.definition.parameters.end.js",
+        "meta.variable.structure.django",
+        "punctuation.definition.arguments.begin.python",
+        "punctuation.definition.arguments.end.python",
+        "punctuation.definition.decorator.python",
+        "punctuation.definition.list.begin.markdown",
+        "punctuation.definition.parameters.begin.python",
+        "punctuation.definition.parameters.end.python",
+        "punctuation.section.function.begin.python",
+        "punctuation.separator.annotation.result.python",
+        "punctuation.separator.arguments.python",
+        "punctuation.separator.parameters.python",
+        "source.css entity.other.attribute-name.class",
+        "source.css entity.other.attribute-name.pseudo-class",
+        "source.css.less entity.other.attribute-name.id",
+        "source.powershell variable.other.member",
+        "storage.type.function.arrow.js",
+        "support.constant.handlebars",
+        "support.function",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
+        "text.html.django storage.type.templatetag.django string.unquoted.tag-string.django",
+        "text.html.django storage.type.variable.django string.unquoted.tag-string.django",
+        "variable.other.django"
       ],
       "settings": {
-        "foreground": "#5deed1"
+        "foreground": "#ffda96"
       }
     },
     {
       "scope": [
-        "entity.other.inherited-class",
-        "meta.type.cast.expr",
-        "meta.type.new.expr",
-        "support.constant.dom",
-        "support.constant.json",
-        "support.constant.math"
+        "text.html.derivative string.quoted.double.html meta.tag.structure.django "
       ],
       "settings": {
-        "foreground": "#4ec9b0"
+        "foreground": "#ffda96",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "meta.fstring.python punctuation.definition.string.begin.python string.interpolated.python string.quoted.single.python",
+        "meta.fstring.python punctuation.definition.string.end.python string.interpolated.python string.quoted.single.python",
+        "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.string.template.begin.js",
+        "punctuation.definition.string.template.end.js",
+        "string.quoted.double.js punctuation.definition.string.begin.js",
+        "string.quoted.double.js punctuation.definition.string.end.js",
+        "string.quoted.single.python punctuation.definition.string.begin.python",
+        "string.quoted.single.python punctuation.definition.string.end.python",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
+        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.end.html"
+      ],
+      "settings": {
+        "foreground": "#82a35d"
       }
     },
     {
@@ -947,6 +704,247 @@
       ],
       "settings": {
         "foreground": "#ccfa97"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.class",
+        "entity.name.namespace",
+        "entity.name.tag",
+        "entity.name.type",
+        "entity.other.attribute",
+        "heading.2.markdown",
+        "heading.2.markdown punctuation.definition.heading.markdown",
+        "keyword.control",
+        "keyword.control.flow.python",
+        "keyword.control.import.go",
+        "keyword.control.import.python",
+        "keyword.map.go",
+        "keyword.operator.expression.of.js",
+        "keyword.operator.logical.python",
+        "keyword.operator.new.js",
+        "keyword.package.go",
+        "keyword.struct.go",
+        "keyword.type.go",
+        "keyword.var.go",
+        "markup.bold",
+        "markup.bold string",
+        "meta.function.js meta.block.js meta.block.js meta.var.expr.js keyword.control.flow.js",
+        "meta.var.expr.js storage.type",
+        "source.go keyword.function",
+        "storage",
+        "storage.modifier",
+        "storage.modifier.async.js",
+        "storage.modifier.declaration.python",
+        "storage.type",
+        "storage.type.class.python",
+        "storage.type.function.async.python",
+        "storage.type.function.js",
+        "storage.type.function.python"
+      ],
+      "settings": {
+        "foreground": "#ff8f8f"
+      }
+    },
+    {
+      "scope": [
+        "source.js constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#ff8f8f",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type.class",
+        "entity.other.inherited-class",
+        "meta.function-call.arguments.python punctuation.definition.list.begin.python",
+        "meta.function-call.arguments.python punctuation.definition.list.end.python",
+        "meta.function.python punctuation.definition.list.begin.python",
+        "meta.function.python punctuation.definition.list.end.python",
+        "meta.item-access.python punctuation.definition.arguments.begin.python",
+        "meta.item-access.python punctuation.definition.arguments.end.python",
+        "meta.tag.structure.django support.type.tag.begin.django",
+        "meta.tag.structure.django support.type.tag.end.django",
+        "meta.type.cast.expr",
+        "meta.type.new.expr",
+        "meta.variable.structure.django support.type.variable.begin.django",
+        "meta.variable.structure.django support.type.variable.end.django",
+        "punctuation.accessor.js",
+        "punctuation.definition.begin.bracket.curly.go",
+        "punctuation.definition.begin.bracket.round.go",
+        "punctuation.definition.end.bracket.curly.go",
+        "punctuation.definition.end.bracket.round.go",
+        "storage.type.customtemplatetag.django",
+        "storage.type.templatetag.django",
+        "storage.type.templatetag.django entity.tag.tagbraces.django",
+        "storage.type.variable.django",
+        "support.class",
+        "support.constant.dom",
+        "support.constant.json",
+        "support.constant.math"
+      ],
+      "settings": {
+        "foreground": "#5deed1"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.django",
+        "keyword.control.go",
+        "keyword.operator.address.go",
+        "keyword.operator.logical.js.jsx",
+        "markup.raw.block",
+        "string.other.link.description.title.markdown",
+        "text.html.django storage.type.templatetag.django keyword.operator.django",
+        "text.html.markdown markup.inline.raw.markdown",
+        "token.debug-token"
+      ],
+      "settings": {
+        "foreground": "#caacf1"
+      }
+    },
+    {
+      "scope": [
+        "markup.underline"
+      ],
+      "settings": {
+        "foreground": "#caacf1",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "scope": [
+        "comment",
+        "comment.block.html",
+        "comment.line.number-sign.python",
+        "fenced_code.block.language",
+        "markup.fenced_code.block.markdown punctuation.definition.markdown",
+        "markup.italic.markdown punctuation.definition",
+        "punctuation.definition.bold.markdown",
+        "punctuation.definition.comment",
+        "punctuation.definition.comment.html",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.raw.markdown",
+        "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+        "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
+      ],
+      "settings": {
+        "foreground": "#627ab6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "comment.block",
+        "string.quoted.docstring.multi.python",
+        "string.quoted.docstring.single.python"
+      ],
+      "settings": {
+        "foreground": "#889eda"
+      }
+    },
+    {
+      "scope": [
+        "markup.bold markup.italic",
+        "markup.bold markup.italic string",
+        "markup.italic markup.bold",
+        "markup.italic markup.bold string",
+        "markup.quote markup.bold",
+        "markup.quote markup.bold string"
+      ],
+      "settings": {
+        "foreground": "#a4b1cd",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "constant.character.escape.regexp",
+        "constant.numeric",
+        "keyword.operator.arithmetic.js",
+        "keyword.operator.arithmetic.python",
+        "keyword.operator.assignment.python",
+        "keyword.operator.bitwise.python",
+        "keyword.operator.comparison.go",
+        "keyword.operator.comparison.js",
+        "keyword.operator.comparison.python",
+        "keyword.operator.logical.js",
+        "keyword.operator.spread.js",
+        "keyword.operator.ternary.js",
+        "keyword.operator.unpacking.arguments.python",
+        "markup.bold.markdown",
+        "markup.italic.markdown",
+        "markup.raw.block.fenced.markdown",
+        "markup.table",
+        "meta.function-call.arguments.python keyword.operator.assignment.python",
+        "meta.function-call.generic.python",
+        "meta.function.parameters.python punctuation.definition.list.begin.python",
+        "meta.function.parameters.python punctuation.definition.list.end.python",
+        "meta.function.python punctuation.definition.list.begin.python",
+        "meta.function.python punctuation.definition.list.end.python",
+        "punctuation.definition",
+        "punctuation.definition.list_item.markdown",
+        "punctuation.section.class.end",
+        "punctuation.separator",
+        "punctuation.separator.annotation.python",
+        "punctuation.separator.colon.python",
+        "punctuation.separator.dict.python",
+        "punctuation.separator.period.python",
+        "text.html.markdown",
+        "variable.language.fenced.markdown"
+      ],
+      "settings": {
+        "foreground": "#a4b1cd"
+      }
+    },
+    {
+      "scope": [
+        "constant.language.boolean.go",
+        "constant.other.ellipsis.python",
+        "entity.name.label",
+        "entity.name.namespace",
+        "entity.name.type.module.js",
+        "heading.1.markdown",
+        "heading.1.markdown punctuation.definition.heading.markdown",
+        "keyword.operator.assignment",
+        "keyword.operator.assignment.python",
+        "meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js",
+        "meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js",
+        "meta.brace.square.js",
+        "meta.jsx.children.js.jsx",
+        "meta.objectliteral.js punctuation.definition.block.js",
+        "punctuation.definition.dict.begin.python",
+        "punctuation.definition.dict.end.python",
+        "punctuation.definition.inheritance.begin.python",
+        "punctuation.definition.inheritance.end.python",
+        "punctuation.definition.list.begin.python",
+        "punctuation.definition.list.end.python",
+        "punctuation.parenthesis.begin.python",
+        "punctuation.parenthesis.end.python",
+        "punctuation.separator.arguments.python",
+        "punctuation.separator.element.python",
+        "punctuation.separator.slice.python",
+        "source.astro meta.embedded.expression.astro",
+        "source.go keyword.operator.assignment",
+        "text.astro",
+        "text.html.derivative",
+        "text.html.django",
+        "text.html.jinja"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.type.package.go"
+      ],
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": ""
       }
     },
     {
@@ -980,25 +978,6 @@
     },
     {
       "scope": [
-        "punctuation.definition.quote.begin.markdown"
-      ],
-      "settings": {
-        "foreground": "#6a9955"
-      }
-    },
-    {
-      "scope": [
-        "string.quoted.single.python punctuation.definition.string.begin.python",
-        "string.quoted.single.python punctuation.definition.string.end.python",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
-        "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.end.html"
-      ],
-      "settings": {
-        "foreground": "#82a35d"
-      }
-    },
-    {
-      "scope": [
         "constant.sha.git-rebase",
         "keyword.other.unit",
         "markup.inserted",
@@ -1006,46 +985,6 @@
       ],
       "settings": {
         "foreground": "#b5cea8"
-      }
-    },
-    {
-      "scope": [
-        "constant.character.escape.python",
-        "keyword.control.django",
-        "text.html.django storage.type.templatetag.django keyword.operator.django"
-      ],
-      "settings": {
-        "foreground": "#caacf1"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control.go",
-        "keyword.operator.address.go",
-        "keyword.operator.logical.js.jsx",
-        "markup.raw.block",
-        "string.other.link.description.title.markdown",
-        "text.html.markdown markup.inline.raw.markdown"
-      ],
-      "settings": {
-        "foreground": "#d79bff"
-      }
-    },
-    {
-      "scope": [
-        "markup.underline"
-      ],
-      "settings": {
-        "foreground": "#d79bff",
-        "fontStyle": "underline"
-      }
-    },
-    {
-      "scope": [
-        "token.debug-token"
-      ],
-      "settings": {
-        "foreground": "#b267e6"
       }
     },
     {
@@ -1084,10 +1023,16 @@
     }
   ],
   "semanticTokenColors": {
-    "class.decorator.builtin:python": "#3fa591",
-    "class.typeHint.builtin:python": "#5deed1",
-    "function.decorator": "#ac9b8b",
-    "function.decorator.builtin:python": "#3fa591",
+    "builtinConstant.typeHint.readonly.builtin:python": "#caacf1",
+    "class.builtin.typeHint:python": "#caacf1",
+    "class.decorator.builtin:python": "#5deed1",
+    "class.decorator.library:python": "#5deed1",
+    "class.typeHint.builtin:python": "#caacf1",
+    "class.typeHint:python": "#caacf1",
+    "function.decorator.builtin:python": "#ffda96",
+    "function.decorator.library:python": "#ffda96",
+    "namespace:javascript": "#ffffff",
+    "parameter.keywordArgument:python": "#569cd6",
     "variable.defaultLibrary:javascript": "#5deed1"
   }
 }

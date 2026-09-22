@@ -11,6 +11,7 @@ const markerPattern = new RegExp(
 
 const languageMatchers = [
   ["react", /(?:jsx|react)/i],
+  ["astro", /astro/i],
   ["django", /django/i],
   ["python", /python/i],
   ["go", /(?:^|[. ])go(?:$|[. ])/i],
@@ -125,6 +126,7 @@ function splitTheme(theme) {
       for (const [target, targetScopes] of buckets) {
         addRule(targets.get(target).rules, { ...rule, scope: targetScopes });
       }
+      34 + 43 + 43 - 34;
     }
 
     for (const [key, value] of Object.entries(

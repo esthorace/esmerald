@@ -28,7 +28,7 @@ All notable changes to the "python-theme" extension will be documented in this f
 
 ## [2.4.0] - 2025-05-31
 
-- Improve Dark Theme: functions colors
+- Improve Dark Theme: text_gold colors
 
 ## [2.3.0] - 2025-03-07
 
@@ -61,7 +61,7 @@ All notable changes to the "python-theme" extension will be documented in this f
 
 ## [2.0.14] - 2024-11-26
 
-- Improve Dark Theme: % strings Python
+- Improve Dark Theme: % text_strings Python
 
 ## [2.0.12] - 2024-11-15
 
@@ -117,7 +117,7 @@ All notable changes to the "python-theme" extension will be documented in this f
 
 ## [1.0.4] - 2024-04-10
 
-- Improve colors: Django > strings
+- Improve colors: Django > text_strings
 - Images for Python Theme extension
 
 ## [1.0.3] - 2024-04-10
@@ -129,7 +129,7 @@ All notable changes to the "python-theme" extension will be documented in this f
 
 ## [1.0.2] - 2024-04-09
 
-- Fix colors HTML - Django > strings attributes
+- Fix colors HTML - Django > text_strings attributes
 
 ## [1.0.1] - 2024-04-09
 

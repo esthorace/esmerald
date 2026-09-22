@@ -2,31 +2,15 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
-        scope: ["variable.other.property.go"],
-        settings: {
-          foreground: colors.azulMedioBrillante11,
-        },
-      },
-      {
-        scope: [
-          "constant.language.boolean.go",
-          "source.go keyword.operator.assignment",
-        ],
-        settings: {
-          foreground: colors.blanco,
-        },
-      },
-      {
-        scope: ["entity.name.type.package.go"],
-        settings: {
-          foreground: colors.blanco,
-          fontStyle: "",
-        },
-      },
-      {
         scope: ["constant.numeric.decimal.go"],
         settings: {
           foreground: colors.rojoClaroBrillante2,
+        },
+      },
+      {
+        scope: ["variable.other.property.go"],
+        settings: {
+          foreground: colors.text_blue,
         },
       },
       {
@@ -40,13 +24,7 @@ module.exports = function createColors(colors) {
           "source.go keyword.function",
         ],
         settings: {
-          foreground: colors.rojoMedioBrillante,
-        },
-      },
-      {
-        scope: ["keyword.operator.comparison.go"],
-        settings: {
-          foreground: colors.textoSecundario,
+          foreground: colors.text_red,
         },
       },
       {
@@ -57,7 +35,35 @@ module.exports = function createColors(colors) {
           "punctuation.definition.end.bracket.round.go",
         ],
         settings: {
-          foreground: colors.turquesaMedioBrillante3,
+          foreground: colors.text_turquoise,
+        },
+      },
+      {
+        scope: ["keyword.control.go", "keyword.operator.address.go"],
+        settings: {
+          foreground: colors.text_violet,
+        },
+      },
+      {
+        scope: ["keyword.operator.comparison.go"],
+        settings: {
+          foreground: colors.text_white_dark,
+        },
+      },
+      {
+        scope: [
+          "constant.language.boolean.go",
+          "source.go keyword.operator.assignment",
+        ],
+        settings: {
+          foreground: colors.text_white_light,
+        },
+      },
+      {
+        scope: ["entity.name.type.package.go"],
+        settings: {
+          foreground: colors.text_white_light,
+          fontStyle: "",
         },
       },
       {
@@ -65,12 +71,6 @@ module.exports = function createColors(colors) {
         settings: {
           foreground: colors.verdeMedioBrillante9,
           fontStyle: "italic",
-        },
-      },
-      {
-        scope: ["keyword.control.go", "keyword.operator.address.go"],
-        settings: {
-          foreground: colors.violetaClaroBrillante2,
         },
       },
     ],

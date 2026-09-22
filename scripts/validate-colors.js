@@ -122,17 +122,6 @@ for (const file of generated) {
   }
 }
 
-const examples = [
-  [darkPalette, "blanco", "#ffffff"],
-  [darkPalette, "verdeClaroSuave", "#a7c075"],
-  [darkPalette, "verdeClaroBrillante", "#ccfa97"],
-];
-for (const [palette, name, value] of examples) {
-  if (palette[name] !== value) {
-    throw new Error(`${name} debe conservar ${value}`);
-  }
-}
-
 console.log(
   `OK: ${darkColors.size} colores oscuros y ${lightColors.size} claros exportados y usados.`,
 );

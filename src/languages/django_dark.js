@@ -13,13 +13,7 @@ module.exports = function createColors(colors) {
           "text.html.django meta.tag.inline.any.html string.quoted.double.html punctuation.definition.string.end.html",
         ],
         settings: {
-          foreground: colors.azulCodigo,
-        },
-      },
-      {
-        scope: ["text.html.django"],
-        settings: {
-          foreground: colors.blanco,
+          foreground: colors.text_blue_dark,
         },
       },
       {
@@ -32,7 +26,7 @@ module.exports = function createColors(colors) {
           "variable.other.django",
         ],
         settings: {
-          foreground: colors.naranjaClaroBrillante2,
+          foreground: colors.text_gold,
         },
       },
       {
@@ -40,19 +34,8 @@ module.exports = function createColors(colors) {
           "text.html.derivative string.quoted.double.html meta.tag.structure.django ",
         ],
         settings: {
-          foreground: colors.naranjaClaroBrillante2,
+          foreground: colors.text_gold,
           fontStyle: "",
-        },
-      },
-      {
-        scope: [
-          "storage.type.customtemplatetag.django",
-          "storage.type.templatetag.django",
-          "storage.type.templatetag.django entity.tag.tagbraces.django",
-          "storage.type.variable.django",
-        ],
-        settings: {
-          foreground: colors.turquesaMedioBrillante,
         },
       },
       {
@@ -61,7 +44,22 @@ module.exports = function createColors(colors) {
           "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.end.html",
         ],
         settings: {
-          foreground: colors.verdeMedioSuave3,
+          foreground: colors.text_green_dark,
+        },
+      },
+      {
+        scope: [
+          "meta.tag.structure.django support.type.tag.begin.django",
+          "meta.tag.structure.django support.type.tag.end.django",
+          "meta.variable.structure.django support.type.variable.begin.django",
+          "meta.variable.structure.django support.type.variable.end.django",
+          "storage.type.customtemplatetag.django",
+          "storage.type.templatetag.django",
+          "storage.type.templatetag.django entity.tag.tagbraces.django",
+          "storage.type.variable.django",
+        ],
+        settings: {
+          foreground: colors.text_turquoise,
         },
       },
       {
@@ -70,7 +68,13 @@ module.exports = function createColors(colors) {
           "text.html.django storage.type.templatetag.django keyword.operator.django",
         ],
         settings: {
-          foreground: colors.violetaClaroBrillante,
+          foreground: colors.text_violet,
+        },
+      },
+      {
+        scope: ["text.html.django"],
+        settings: {
+          foreground: colors.text_white_light,
         },
       },
     ],

@@ -7,7 +7,7 @@ module.exports = function createColors(colors) {
           "punctuation.definition.string.end.html source.css",
         ],
         settings: {
-          foreground: colors.azulCodigo,
+          foreground: colors.text_blue_dark,
         },
       },
       {

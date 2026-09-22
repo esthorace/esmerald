@@ -2,15 +2,6 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
-        scope: [
-          "string.quoted.double.begin.django",
-          "string.quoted.double.end.django",
-        ],
-        settings: {
-          foreground: colors.azulCodigo,
-        },
-      },
-      {
         scope: ["text.html.django"],
         settings: {
           foreground: colors.negro,
@@ -20,6 +11,15 @@ module.exports = function createColors(colors) {
         scope: ["string.quoted.double.django", "string.quoted.single.django"],
         settings: {
           foreground: colors.rojoClaroBrillante4,
+        },
+      },
+      {
+        scope: [
+          "string.quoted.double.begin.django",
+          "string.quoted.double.end.django",
+        ],
+        settings: {
+          foreground: colors.text_blue_dark,
         },
       },
       {

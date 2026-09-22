@@ -4,7 +4,7 @@ module.exports = function createColors(colors) {
       {
         scope: ["source.css variable"],
         settings: {
-          foreground: colors.azulClaroBrillante,
+          foreground: colors.text_blue_light,
         },
       },
       {
@@ -20,7 +20,7 @@ module.exports = function createColors(colors) {
           "source.css.less entity.other.attribute-name.id",
         ],
         settings: {
-          foreground: colors.naranjaClaroBrillante2,
+          foreground: colors.text_gold,
         },
       },
     ],
