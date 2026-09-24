@@ -506,6 +506,8 @@
     },
     {
       "scope": [
+        "comment.block.documentation.ts storage.type.class.jsdoc",
+        "comment.block.documentation.ts variable.other.jsdoc",
         "meta.function-call.arguments.python",
         "variable.other.property.go",
         "variable.parameter"
@@ -573,6 +575,7 @@
         "punctuation.definition.metadata.markdown",
         "punctuation.separator.key-value.html",
         "punctuation.terminator.statement",
+        "punctuation.terminator.statement.ts",
         "text.html.derivative punctuation.definition.string"
       ],
       "settings": {
@@ -631,10 +634,14 @@
         "heading.3.markdown punctuation.definition.heading.markdown",
         "keyword.operator.getter.django",
         "meta.arrow.js meta.block.js meta.brace.round.js",
+        "meta.arrow.ts meta.block.ts meta.brace.round.ts",
         "meta.function.decorator.python entity.name.function.decorator.python",
         "meta.function.js meta.block.js meta.brace.round.js",
         "meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js",
         "meta.function.js meta.parameters.js punctuation.definition.parameters.end.js",
+        "meta.function.ts meta.block.ts meta.brace.round.ts",
+        "meta.function.ts meta.parameters.ts punctuation.definition.parameters.begin.ts",
+        "meta.function.ts meta.parameters.ts punctuation.definition.parameters.end.ts",
         "meta.variable.structure.django",
         "punctuation.definition.arguments.begin.python",
         "punctuation.definition.arguments.end.python",
@@ -651,6 +658,7 @@
         "source.css.less entity.other.attribute-name.id",
         "source.powershell variable.other.member",
         "storage.type.function.arrow.js",
+        "storage.type.function.arrow.ts",
         "support.constant.handlebars",
         "support.function",
         "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
@@ -677,9 +685,13 @@
         "meta.fstring.python punctuation.definition.string.end.python string.interpolated.python string.quoted.single.python",
         "punctuation.definition.quote.begin.markdown",
         "punctuation.definition.string.template.begin.js",
+        "punctuation.definition.string.template.begin.ts",
         "punctuation.definition.string.template.end.js",
+        "punctuation.definition.string.template.end.ts",
         "string.quoted.double.js punctuation.definition.string.begin.js",
         "string.quoted.double.js punctuation.definition.string.end.js",
+        "string.quoted.double.ts punctuation.definition.string.begin.ts",
+        "string.quoted.double.ts punctuation.definition.string.end.ts",
         "string.quoted.single.python punctuation.definition.string.begin.python",
         "string.quoted.single.python punctuation.definition.string.end.python",
         "text.html.django meta.tag.inline.any.html string.quoted.double.html storage.type.templatetag.django string.quoted.single.html punctuation.definition.string.begin.html",
@@ -720,27 +732,42 @@
         "keyword.control.import.go",
         "keyword.control.import.python",
         "keyword.map.go",
+        "keyword.operator.expression.delete.ts",
+        "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.instanceof.ts",
         "keyword.operator.expression.of.js",
+        "keyword.operator.expression.of.ts",
+        "keyword.operator.expression.typeof.ts",
+        "keyword.operator.expression.void.ts",
         "keyword.operator.logical.python",
         "keyword.operator.new.js",
+        "keyword.operator.new.ts",
         "keyword.package.go",
         "keyword.struct.go",
         "keyword.type.go",
         "keyword.var.go",
         "markup.bold",
         "markup.bold string",
+        "meta.class.ts storage.modifier.ts",
         "meta.function.js meta.block.js meta.block.js meta.var.expr.js keyword.control.flow.js",
+        "meta.function.ts meta.block.ts meta.block.ts meta.var.expr.ts keyword.control.flow.ts",
         "meta.var.expr.js storage.type",
+        "meta.var.expr.ts storage.type",
         "source.go keyword.function",
         "storage",
         "storage.modifier",
         "storage.modifier.async.js",
+        "storage.modifier.async.ts",
         "storage.modifier.declaration.python",
+        "storage.modifier.ts",
         "storage.type",
         "storage.type.class.python",
         "storage.type.function.async.python",
         "storage.type.function.js",
-        "storage.type.function.python"
+        "storage.type.function.python",
+        "storage.type.function.ts",
+        "variable.language.super.ts",
+        "variable.language.this.ts"
       ],
       "settings": {
         "foreground": "#ff8f8f"
@@ -748,7 +775,8 @@
     },
     {
       "scope": [
-        "source.js constant.other.object.key.js string.unquoted.label.js"
+        "source.js constant.other.object.key.js string.unquoted.label.js",
+        "source.ts constant.other.object.key.ts string.unquoted.label.ts"
       ],
       "settings": {
         "foreground": "#ff8f8f",
@@ -759,6 +787,7 @@
       "scope": [
         "entity.name.type.class",
         "entity.other.inherited-class",
+        "keyword.operator.type.annotation.ts",
         "meta.function-call.arguments.python punctuation.definition.list.begin.python",
         "meta.function-call.arguments.python punctuation.definition.list.end.python",
         "meta.function.python punctuation.definition.list.begin.python",
@@ -772,10 +801,14 @@
         "meta.variable.structure.django support.type.variable.begin.django",
         "meta.variable.structure.django support.type.variable.end.django",
         "punctuation.accessor.js",
+        "punctuation.accessor.optional.ts",
+        "punctuation.accessor.ts",
         "punctuation.definition.begin.bracket.curly.go",
         "punctuation.definition.begin.bracket.round.go",
         "punctuation.definition.end.bracket.curly.go",
         "punctuation.definition.end.bracket.round.go",
+        "punctuation.definition.template-expression.begin.ts",
+        "punctuation.definition.template-expression.end.ts",
         "storage.type.customtemplatetag.django",
         "storage.type.templatetag.django",
         "storage.type.templatetag.django entity.tag.tagbraces.django",
@@ -791,12 +824,17 @@
     },
     {
       "scope": [
+        "entity.name.type.alias.ts",
+        "entity.name.type.enum.ts",
+        "entity.name.type.interface.ts",
+        "entity.name.type.ts",
         "keyword.control.django",
         "keyword.control.go",
         "keyword.operator.address.go",
         "keyword.operator.logical.js.jsx",
         "markup.raw.block",
         "string.other.link.description.title.markdown",
+        "support.type.primitive.ts",
         "text.html.django storage.type.templatetag.django keyword.operator.django",
         "text.html.markdown markup.inline.raw.markdown",
         "token.debug-token"
@@ -838,7 +876,16 @@
     },
     {
       "scope": [
+        "comment.block.documentation.ts punctuation.definition.comment.ts"
+      ],
+      "settings": {
+        "foreground": "#627ab6"
+      }
+    },
+    {
+      "scope": [
         "comment.block",
+        "comment.block.documentation.ts",
         "string.quoted.docstring.multi.python",
         "string.quoted.docstring.single.python"
       ],
@@ -864,16 +911,22 @@
       "scope": [
         "constant.character.escape.regexp",
         "constant.numeric",
+        "constant.numeric.decimal.ts",
         "keyword.operator.arithmetic.js",
         "keyword.operator.arithmetic.python",
+        "keyword.operator.arithmetic.ts",
         "keyword.operator.assignment.python",
         "keyword.operator.bitwise.python",
         "keyword.operator.comparison.go",
         "keyword.operator.comparison.js",
         "keyword.operator.comparison.python",
+        "keyword.operator.comparison.ts",
         "keyword.operator.logical.js",
+        "keyword.operator.logical.ts",
         "keyword.operator.spread.js",
+        "keyword.operator.spread.ts",
         "keyword.operator.ternary.js",
+        "keyword.operator.ternary.ts",
         "keyword.operator.unpacking.arguments.python",
         "markup.bold.markdown",
         "markup.italic.markdown",
@@ -893,6 +946,7 @@
         "punctuation.separator.colon.python",
         "punctuation.separator.dict.python",
         "punctuation.separator.period.python",
+        "storage.type.numeric.bigint.ts",
         "text.html.markdown",
         "variable.language.fenced.markdown"
       ],
@@ -907,15 +961,20 @@
         "entity.name.label",
         "entity.name.namespace",
         "entity.name.type.module.js",
+        "entity.name.type.module.ts",
         "heading.1.markdown",
         "heading.1.markdown punctuation.definition.heading.markdown",
         "keyword.operator.assignment",
         "keyword.operator.assignment.python",
         "meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.js",
         "meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.js",
+        "meta.arrow.ts meta.parameters.ts punctuation.definition.parameters.begin.ts",
+        "meta.arrow.ts meta.parameters.ts punctuation.definition.parameters.end.ts",
         "meta.brace.square.js",
+        "meta.brace.square.ts",
         "meta.jsx.children.js.jsx",
         "meta.objectliteral.js punctuation.definition.block.js",
+        "meta.objectliteral.ts punctuation.definition.block.ts",
         "punctuation.definition.dict.begin.python",
         "punctuation.definition.dict.end.python",
         "punctuation.definition.inheritance.begin.python",
@@ -1029,10 +1088,18 @@
     "class.decorator.library:python": "#5deed1",
     "class.typeHint.builtin:python": "#caacf1",
     "class.typeHint:python": "#caacf1",
+    "enumMember:typescript": "#2a6696",
     "function.decorator.builtin:python": "#ffda96",
     "function.decorator.library:python": "#ffda96",
+    "interface:typescript": "#caacf1",
     "namespace:javascript": "#ffffff",
+    "namespace:typescript": "#ffffff",
+    "parameter.declaration:typescript": "#2a6696",
     "parameter.keywordArgument:python": "#569cd6",
-    "variable.defaultLibrary:javascript": "#5deed1"
+    "type:typescript": "#caacf1",
+    "typeParameter:typescript": "#caacf1",
+    "variable.defaultLibrary:javascript": "#5deed1",
+    "variable.defaultLibrary:typescript": "#5deed1",
+    "variable:typescript": "#2a6696"
   }
 }

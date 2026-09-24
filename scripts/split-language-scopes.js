@@ -18,6 +18,7 @@ const languageMatchers = [
   ["markdown", /markdown/i],
   ["css", /css/i],
   ["html", /html/i],
+  ["typescript", /(?:typescript|source\.ts|[.]ts(?:[.]|$))/i],
   ["javascript", /(?:javascript|source\.js|[.]js(?:[.]|$)|js[.])/i],
 ];
 const languageNames = new Set(languageMatchers.map(([name]) => name));
@@ -52,7 +53,7 @@ function classifyScope(scope) {
 
 function classifySemanticKey(key) {
   const match = key.match(
-    /:(python|django|go|javascript|markdown|css|html|react)$/i,
+    /:(python|django|go|javascript|typescript|markdown|css|html|react)$/i,
   );
   return match ? match[1].toLowerCase() : null;
 }

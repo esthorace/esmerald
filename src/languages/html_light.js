@@ -2,36 +2,49 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
-        scope: ["entity.other.attribute-name.html"],
-        settings: {
-          foreground: colors.naranjaMedioVivo6,
-        },
-      },
-      {
         scope: ["text.html.derivative"],
         settings: {
-          foreground: colors.negro,
+          foreground: colors.text_black_dark,
         },
       },
       {
-        scope: [
-          "entity.name.tag.html",
-          "punctuation.definition.tag.begin.html",
-          "punctuation.definition.tag.end.html",
-        ],
+        scope: ["entity.other.attribute-name.html"],
         settings: {
-          foreground: colors.rojoMedioBrillante4,
+          foreground: colors.text_blue_deep,
         },
       },
       {
         scope: [
           "punctuation.definition.string.begin.html",
           "punctuation.definition.string.end.html",
+        ],
+        settings: {
+          foreground: colors.text_blue_light_ultra,
+        },
+      },
+      {
+        scope: [
+          "punctuation.definition.string",
           "punctuation.separator.key-value.html",
           "string.quoted.double.html",
         ],
         settings: {
-          foreground: colors.text_blue_dark,
+          foreground: colors.text_blue_medium,
+        },
+      },
+      {
+        scope: ["entity.name.tag.html"],
+        settings: {
+          foreground: colors.text_red_dark,
+        },
+      },
+      {
+        scope: [
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html",
+        ],
+        settings: {
+          foreground: colors.text_red_light,
         },
       },
     ],
