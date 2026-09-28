@@ -351,6 +351,7 @@ module.exports = function createColors(colors) {
       "widget.border": colors.verdeAcento,
       "widget.shadow": colors.verdeMedioBrillanteTransparente8,
       "window.activeBorder": colors.azulOscuroVivo2,
+      "modernEditorTab.activeBackground": colors.azulOscuroSuave3,
     },
   };
 };

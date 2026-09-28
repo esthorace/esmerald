@@ -3,11 +3,36 @@ module.exports = function createColors(colors) {
     tokenColors: [
       {
         scope: [
+          "meta.method.declaration.ts",
+          "meta.parameters.ts",
+          "punctuation.definition.parameters.begin.ts",
+          "punctuation.definition.parameters.end.ts",
+        ],
+        settings: {
+          foreground: colors.text_blue,
+          fontStyle: "",
+        },
+      },
+      {
+        scope: [
+          "comment.block.documentation.ts storage.type.class.jsdoc",
+          "comment.block.documentation.ts variable.other.jsdoc",
+          "meta.method.declaration.ts",
+          "meta.parameters.ts",
+        ],
+        settings: {
+          foreground: colors.text_blue,
+        },
+      },
+      {
+        scope: [
+          "comment.block.documentation.ts entity.name.type.instance.jsdoc",
           "comment.block.documentation.ts storage.type.class.jsdoc",
           "comment.block.documentation.ts variable.other.jsdoc",
         ],
         settings: {
-          foreground: colors.text_blue,
+          foreground: colors.text_blue_dark,
+          fontStyle: "none",
         },
       },
       {
@@ -18,6 +43,8 @@ module.exports = function createColors(colors) {
       },
       {
         scope: [
+          "meta.arrow.js meta.parameters.js punctuation.definition.parameters.begin.ts",
+          "meta.arrow.js meta.parameters.js punctuation.definition.parameters.end.ts",
           "meta.arrow.ts meta.block.ts meta.brace.round.ts",
           "meta.function.ts meta.block.ts meta.brace.round.ts",
           "meta.function.ts meta.parameters.ts punctuation.definition.parameters.begin.ts",
@@ -110,12 +137,18 @@ module.exports = function createColors(colors) {
       },
       {
         scope: [
+          "constant.language.boolean.false.ts",
+          "constant.language.boolean.true.ts",
+          "constant.language.null.ts",
+          "constant.language.undefined.false.ts",
           "constant.numeric.decimal.ts",
           "keyword.operator.arithmetic.ts",
           "keyword.operator.comparison.ts",
+          "keyword.operator.increment.ts",
           "keyword.operator.logical.ts",
           "keyword.operator.spread.ts",
           "keyword.operator.ternary.ts",
+          "punctuation.terminator.statement.ts",
           "storage.type.numeric.bigint.ts",
         ],
         settings: {
@@ -136,14 +169,15 @@ module.exports = function createColors(colors) {
       },
     ],
     semanticTokenColors: {
-      "enumMember:typescript": colors.text_blue_deep,
+      "enumMember:typescript": colors.text_blue,
       "interface:typescript": colors.text_violet,
       "namespace:typescript": colors.text_white_light,
-      "parameter.declaration:typescript": colors.text_blue_deep,
+      "parameter.declaration:typescript": colors.text_blue_dark,
       "type:typescript": colors.text_violet,
       "typeParameter:typescript": colors.text_violet,
+      "variable.declaration.readonly:typescript": colors.text_blue,
+      "variable.readonly:typescript": colors.text_blue,
       "variable.defaultLibrary:typescript": colors.text_turquoise,
-      "variable:typescript": colors.text_blue_deep,
     },
   };
 };

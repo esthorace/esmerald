@@ -165,6 +165,8 @@ module.exports = function createColors(colors) {
       "class.decorator.library:python": colors.text_turquoise,
       "class.typeHint:python": colors.text_violet,
       "class.typeHint.builtin:python": colors.text_violet,
+      "class.typeHint.library:python": colors.text_violet,
+      "module.typeHint:python": colors.text_violet,
       "parameter.keywordArgument:python": colors.text_blue_dark,
       "function.decorator.builtin:python": colors.text_gold,
       "function.decorator.library:python": colors.text_gold,

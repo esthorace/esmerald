@@ -2,6 +2,15 @@ module.exports = function createColors(colors) {
   return {
     tokenColors: [
       {
+        scope: [
+          "punctuation.definition.link.title.begin.markdown",
+          "punctuation.definition.link.title.end.markdown",
+        ],
+        settings: {
+          fontStyle: "",
+        },
+      },
+      {
         scope: ["constant.other.reference.link.markdown"],
         settings: {
           foreground: colors.azulMedioBrillante13,
@@ -108,7 +117,6 @@ module.exports = function createColors(colors) {
         ],
         settings: {
           foreground: colors.text_violet_deep,
-          fontStyle: "italic",
         },
       },
       {

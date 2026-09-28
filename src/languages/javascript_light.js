@@ -19,6 +19,7 @@ module.exports = function createColors(colors) {
       },
       {
         scope: [
+          "comment.block.documentation.js entity.name.type.instance.jsdoc",
           "comment.block.documentation.js storage.type.class.jsdoc",
           "comment.block.documentation.js variable.other.jsdoc",
           "punctuation.terminator.statement.js",
@@ -29,6 +30,9 @@ module.exports = function createColors(colors) {
       },
       {
         scope: [
+          "comment.block.documentation.js entity.name.type.instance.jsdoc",
+          "comment.block.documentation.js storage.type.class.jsdoc",
+          "comment.block.documentation.js variable.other.jsdoc",
           "entity.name.function.js",
           "entity.name.type.class.js",
           "entity.other.inherited-class.js",

@@ -4,9 +4,25 @@
   "semanticHighlighting": true,
   "$schema": "vscode://schemas/color-theme",
   "colors": {
-    "activityBar.activeBackground": "#fcfcfc",
+    "titleBar.inactiveBackground": "#ced4e2",
+    "activityBar.background": "#f5f7fc",
+    "sideBar.background": "#f5f7fc",
+    "panel.background": "#f5f7fc",
+    "editorGroupHeader.tabsBackground": "#f5f7fc",
+    "breadcrumb.background": "#f5f7fc",
+    "editorGroupHeader.border": "#f5f7fc",
+    "modernActivityBar.background": "#f5f7fc",
+    "titleBar.activeBackground": "#f5f7fc",
+    "activityBar.activeBackground": "#e5edf8",
+    "modernPanel.border": "#e5edf8",
+    "modernActivityBar.border": "#e5edf8",
+    "modernUI.shellBackground": "#e5edf8",
+    "modernTab.activeBackground": "#e5edf8",
+    "modernEditorTab.activeBackground": "#e5edf8",
+    "tab.activeBackground": "#ffffff",
+    "tab.inactiveBackground": "#f5f7fc",
+    "tree.indentGuidesStroke": "#000000",
     "activityBar.activeBorder": "#efb810",
-    "activityBar.background": "#fcfcfc",
     "activityBar.border": "#d9dfe7",
     "activityBar.foreground": "#333e4f",
     "activityBar.inactiveForeground": "#8b98a9",
@@ -15,7 +31,6 @@
     "badge.background": "#00ffbb46",
     "badge.foreground": "#08cd98",
     "breadcrumb.activeSelectionForeground": "#5d6a7d",
-    "breadcrumb.background": "#f4f7fd",
     "breadcrumb.focusForeground": "#333e4f",
     "breadcrumb.foreground": "#738295",
     "breadcrumbPicker.background": "#fafbfe",
@@ -29,7 +44,7 @@
     "commandCenter.activeBackground": "#fafbfe",
     "commandCenter.activeBorder": "#bfc7d2",
     "commandCenter.activeForeground": "#333e4f",
-    "commandCenter.background": "#f4f7fd",
+    "commandCenter.background": "#f5f7fc",
     "commandCenter.border": "#d9dfe7",
     "commandCenter.foreground": "#5d6a7d",
     "commandCenter.inactiveBorder": "#d9dfe7",
@@ -41,7 +56,7 @@
     "dropdown.background": "#ffffff",
     "dropdown.border": "#bfc7d2",
     "dropdown.foreground": "#333e4f",
-    "dropdown.listBackground": "#f4f7fd",
+    "dropdown.listBackground": "#f5f7fc",
     "editor.background": "#ffffff",
     "editor.findMatchBackground": "#df812866",
     "editor.findMatchBorder": "#df8128",
@@ -51,7 +66,7 @@
     "editor.foldBackground": "#f4f7fdb6",
     "editor.foreground": "#1F2939",
     "editor.inactiveSelectionBackground": "#c7d3ff66",
-    "editor.lineHighlightBackground": "#f4f7fd",
+    "editor.lineHighlightBackground": "#f5f7fc",
     "editor.linkedEditingBackground": "#a87ffb99",
     "editor.selectionBackground": "#c7d3ff99",
     "editor.selectionHighlightBackground": "#98e4b999",
@@ -74,7 +89,6 @@
     "editorError.foreground": "#df4047",
     "editorGhostText.foreground": "#a4afbd",
     "editorGroup.border": "#d9dfe7",
-    "editorGroupHeader.tabsBackground": "#fcfcfc",
     "editorGroupHeader.tabsBorder": "#d9dfe7",
     "editorGutter.addedBackground": "#98e4b9",
     "editorGutter.deletedBackground": "#fc8f8e",
@@ -118,7 +132,7 @@
     "inputOption.activeBorder": "#a87ffb",
     "inputOption.activeForeground": "#1F2939",
     "inputValidation.errorBorder": "#c1313b",
-    "keybindingLabel.background": "#f4f7fd",
+    "keybindingLabel.background": "#f5f7fc",
     "keybindingLabel.border": "#d9dfe7",
     "keybindingLabel.bottomBorder": "#d9dfe7",
     "keybindingLabel.foreground": "#333e4f",
@@ -133,7 +147,7 @@
     "list.inactiveSelectionBackground": "#e4ecfd",
     "list.inactiveSelectionForeground": "#333e4f",
     "list.warningForeground": "#c16f23",
-    "menu.background": "#f4f7fd",
+    "menu.background": "#f5f7fc",
     "menu.border": "#bfc7d2",
     "menu.foreground": "#1F2939",
     "menu.selectionBackground": "#d9dfe7",
@@ -142,14 +156,13 @@
     "minimap.background": "#fcfcfc",
     "notificationCenterHeader.background": "#ffffff",
     "notificationCenterHeader.foreground": "#5d6a7d",
-    "notifications.background": "#f4f7fd",
+    "notifications.background": "#f5f7fc",
     "notifications.border": "#bfc7d2",
     "notifications.foreground": "#333e4f",
     "notificationsErrorIcon.foreground": "#df4047",
     "notificationsInfoIcon.foreground": "#738295",
     "notificationsWarningIcon.foreground": "#df8128",
     "notificationToast.border": "#bfc7d2",
-    "panel.background": "#f4f7fd",
     "panel.border": "#d9dfe7",
     "panelInput.border": "#d9dfe7",
     "panelSection.border": "#d9dfe7",
@@ -159,7 +172,7 @@
     "panelTitle.activeForeground": "#333e4f",
     "panelTitle.inactiveForeground": "#5d6a7d",
     "peekView.border": "#8964e8",
-    "peekViewEditor.background": "#f4f7fd",
+    "peekViewEditor.background": "#f5f7fc",
     "peekViewEditor.matchHighlightBackground": "#df812866",
     "peekViewEditor.matchHighlightBorder": "#df8128",
     "peekViewResult.background": "#e7ebf2",
@@ -181,14 +194,13 @@
     "scrollbarSlider.hoverBackground": "#959da544",
     "settings.headerForeground": "#333e4f",
     "settings.modifiedItemIndicator": "#708fff",
-    "sideBar.background": "#fcfcfc",
     "sideBar.border": "#d9dfe7",
     "sideBar.foreground": "#000000",
-    "sideBarSectionHeader.background": "#f4f7fd",
+    "sideBarSectionHeader.background": "#f5f7fc",
     "sideBarSectionHeader.border": "#d9dfe7",
     "sideBarSectionHeader.foreground": "#333e4f",
     "sideBarTitle.foreground": "#333e4f",
-    "statusBar.background": "#f4f7fd",
+    "statusBar.background": "#f5f7fc",
     "statusBar.border": "#ffffff",
     "statusBar.debuggingBackground": "#4a5748d3",
     "statusBar.debuggingForeground": "#000000",
@@ -199,13 +211,11 @@
     "statusBarItem.remoteBackground": "#3f4753",
     "statusBarItem.remoteForeground": "#00ffbb",
     "statusBarItem.remoteHoverForeground": "#ffffff",
-    "tab.activeBackground": "#f4f7fd",
     "tab.activeBorder": "#ffffff",
     "tab.activeBorderTop": "#8964e8",
     "tab.activeForeground": "#333e4f",
     "tab.border": "#d9dfe7",
     "tab.hoverBackground": "#ffffff",
-    "tab.inactiveBackground": "#fcfcfc",
     "tab.inactiveForeground": "#5d6a7d",
     "tab.unfocusedActiveBorder": "#ffffff",
     "tab.unfocusedActiveBorderTop": "#d9dfe7",
@@ -236,26 +246,29 @@
     "terminalCursor.foreground": "#3d4249",
     "textBlockQuote.background": "#fafbfe",
     "textBlockQuote.border": "#d9dfe7",
-    "textCodeBlock.background": "#f4f7fd",
+    "textCodeBlock.background": "#f5f7fc",
     "textLink.activeForeground": "#4d21bb",
     "textLink.foreground": "#6f4cde",
     "textPreformat.foreground": "#5d6a7d",
     "textSeparator.foreground": "#a4afbd",
-    "titleBar.activeBackground": "#fcfcfc",
     "titleBar.activeForeground": "#1F2939",
     "titleBar.border": "#ced4e2",
-    "titleBar.inactiveBackground": "#ced4e2",
-    "titleBar.inactiveForeground": "#f4f7fd",
+    "titleBar.inactiveForeground": "#f5f7fc",
     "toolbar.activeBackground": "#1f293929",
     "toolbar.hoverBackground": "#1f293914",
-    "tree.indentGuidesStroke": "#d9dfe7",
     "widget.shadow": "#1f293940"
   },
   "tokenColors": [
     {
       "scope": [
+        "entity.name.type.package.go",
+        "heading.1.markdown",
+        "heading.1.markdown punctuation.definition.heading.markdown",
         "keyword.operator.assignment",
-        "text.html.derivative"
+        "meta.jsx.children.jsx",
+        "text.html.derivative",
+        "text.html.jsx",
+        "text.jsx"
       ],
       "settings": {
         "foreground": "#000000"
@@ -264,25 +277,51 @@
     {
       "scope": [
         "constant.character.escape.python",
+        "constant.language.boolean.go",
+        "constant.language.null.go",
+        "constant.numeric.decimal.go",
         "constant.numeric.decimal.js",
         "constant.numeric.decimal.ts",
         "keyword.control.anchor.regexp",
+        "keyword.operator.arithmetic.go",
         "keyword.operator.arithmetic.js",
         "keyword.operator.arithmetic.ts",
+        "keyword.operator.logical.go",
         "keyword.operator.logical.js",
         "keyword.operator.logical.ts",
         "keyword.operator.ternary.js",
         "keyword.operator.ternary.ts",
+        "markup.bold.markdown",
+        "markup.italic.markdown",
+        "markup.quote punctuation.definition.blockquote.markdown",
+        "markup.raw.block.fenced.markdown",
         "meta.definition.variable.js",
         "meta.definition.variable.ts",
+        "meta.embedded.expression.jsx constant.numeric.decimal.jsx",
+        "meta.embedded.expression.jsx keyword.control.anchor.regexp",
+        "meta.embedded.expression.jsx keyword.operator.arithmetic.jsx",
+        "meta.embedded.expression.jsx keyword.operator.logical.jsx",
+        "meta.embedded.expression.jsx keyword.operator.ternary.jsx",
+        "meta.embedded.expression.jsx meta.definition.variable.jsx",
+        "meta.embedded.expression.jsx storage.type.numeric.bigint.jsx",
+        "meta.embedded.expression.jsx variable.other.constant.object.jsx",
+        "meta.embedded.expression.jsx variable.other.readwrite.jsx",
         "meta.item-access.python punctuation.definition.arguments.begin.python",
         "meta.item-access.python punctuation.definition.arguments.end.python",
+        "punctuation.definition.begin.bracket.curly.go",
+        "punctuation.definition.begin.bracket.round.go",
+        "punctuation.definition.end.bracket.curly.go",
+        "punctuation.definition.end.bracket.round.go",
+        "punctuation.definition.fenced.markdown",
+        "punctuation.definition.list_item.markdown",
         "storage.type.format.python",
         "storage.type.imaginary.number.python",
         "storage.type.numeric.bigint.js",
         "storage.type.numeric.bigint.ts",
         "storage.type.string.python",
+        "text.html.markdown",
         "variable",
+        "variable.language.fenced.markdown",
         "variable.other.constant.object.js",
         "variable.other.constant.object.ts",
         "variable.other.readwrite.js",
@@ -294,10 +333,14 @@
     },
     {
       "scope": [
+        "comment.block.documentation.js entity.name.type.instance.jsdoc",
         "comment.block.documentation.js storage.type.class.jsdoc",
         "comment.block.documentation.js variable.other.jsdoc",
         "comment.block.documentation.ts storage.type.class.jsdoc",
         "comment.block.documentation.ts variable.other.jsdoc",
+        "meta.embedded.expression.jsx comment.block.documentation.jsx storage.type.class.jsdoc",
+        "meta.embedded.expression.jsx comment.block.documentation.jsx variable.other.jsdoc",
+        "meta.embedded.expression.jsx punctuation.terminator.statement.jsx",
         "punctuation.terminator.statement.js",
         "punctuation.terminator.statement.ts"
       ],
@@ -307,15 +350,32 @@
     },
     {
       "scope": [
+        "comment.block.documentation.js entity.name.type.instance.jsdoc",
+        "comment.block.documentation.js storage.type.class.jsdoc",
+        "comment.block.documentation.js variable.other.jsdoc",
+        "constant.other.reference.link.markdown",
+        "entity.name.function.go",
         "entity.name.function.js",
         "entity.name.function.python",
+        "entity.name.function.support.builtin.go",
+        "entity.name.function.support.go",
         "entity.name.function.ts",
         "entity.name.type.class.js",
         "entity.name.type.class.python",
         "entity.name.type.class.ts",
+        "entity.name.type.go",
         "entity.other.inherited-class.js",
         "entity.other.inherited-class.ts",
+        "heading.4.markdown",
+        "heading.4.markdown punctuation.definition.heading.markdown",
         "meta.class.inheritance.python",
+        "meta.embedded.expression.jsx entity.name.function.jsx",
+        "meta.embedded.expression.jsx entity.name.type.class.jsx",
+        "meta.embedded.expression.jsx entity.other.inherited-class.jsx",
+        "meta.embedded.expression.jsx new.expr.jsx meta.brace.round.jsx",
+        "meta.embedded.expression.jsx punctuation.definition.parameters.begin.jsx",
+        "meta.embedded.expression.jsx punctuation.definition.parameters.end.jsx",
+        "meta.embedded.expression.jsx variable.other.object.jsx",
         "meta.function-call.generic.python",
         "meta.function-call.python punctuation.definition.arguments.begin.python",
         "meta.function-call.python punctuation.definition.arguments.end.python",
@@ -336,6 +396,7 @@
         "punctuation.section.function.begin.python",
         "punctuation.separator.annotation.result.python",
         "source.css variable",
+        "string.other.link.title.markdown",
         "support.function.magic.python",
         "variable.other.object.js",
         "variable.other.object.ts"
@@ -347,7 +408,13 @@
     {
       "scope": [
         "entity.other.attribute-name.html",
+        "entity.other.attribute-name.jsx",
+        "markup.underline.link.markdown",
+        "meta.embedded.expression.jsx variable.object.property.jsx",
+        "meta.embedded.expression.jsx variable.other.property.jsx",
+        "meta.embedded.expression.jsx variable.parameter.jsx",
         "meta.fstring.python meta.member.access.python support.variable.magic.python",
+        "punctuation.definition.metadata.markdown",
         "variable.object.property.ts",
         "variable.other.property.js",
         "variable.other.property.ts",
@@ -361,7 +428,9 @@
     {
       "scope": [
         "punctuation.definition.string.begin.html",
-        "punctuation.definition.string.end.html"
+        "punctuation.definition.string.begin.jsx",
+        "punctuation.definition.string.end.html",
+        "punctuation.definition.string.end.jsx"
       ],
       "settings": {
         "foreground": "#c2e6f7"
@@ -370,8 +439,14 @@
     {
       "scope": [
         "punctuation.definition.string",
+        "punctuation.definition.string.jsx",
         "punctuation.separator.key-value.html",
-        "string.quoted.double.html"
+        "punctuation.separator.key-value.jsx",
+        "string.quoted.double.html",
+        "string.quoted.double.jsx",
+        "string.quoted.single.jsx",
+        "text.html.markdown markup.inline.raw.markdown punctuation.definition.raw.markdown",
+        "variable.language.fenced.markdown"
       ],
       "settings": {
         "foreground": "#86b9d1"
@@ -380,20 +455,32 @@
     {
       "scope": [
         "entity.name.function.decorator.python",
+        "entity.name.tag.component.jsx",
         "entity.name.tag.css",
         "entity.other.attribute-name.class.css",
         "entity.other.attribute-name.id.css",
         "entity.other.attribute-name.parent-selector.css",
         "entity.other.attribute-name.pseudo-element.css",
         "entity.other.attribute-name.scss",
+        "heading.3.markdown",
+        "heading.3.markdown punctuation.definition.heading.markdown",
         "keyword.control.django",
         "keyword.operator.argument.django",
         "keyword.operator.filter.django",
+        "meta.embedded.expression.jsx meta.arrow.jsx meta.block.jsx meta.brace.round.jsx",
+        "meta.embedded.expression.jsx meta.arrow.jsx meta.parameters.jsx punctuation.definition.parameters.begin.jsx",
+        "meta.embedded.expression.jsx meta.arrow.jsx meta.parameters.jsx punctuation.definition.parameters.end.jsx",
+        "meta.embedded.expression.jsx meta.function.jsx meta.block.jsx meta.brace.round.jsx",
+        "meta.embedded.expression.jsx meta.function.jsx meta.parameters.jsx punctuation.definition.parameters.begin.jsx",
+        "meta.embedded.expression.jsx meta.function.jsx meta.parameters.jsx punctuation.definition.parameters.end.jsx",
+        "meta.embedded.expression.jsx storage.type.function.arrow.jsx",
         "meta.function.decorator.python punctuation.definition.arguments.begin.python",
         "meta.function.decorator.python punctuation.definition.arguments.end.python",
+        "punctuation.definition.list.begin.markdown",
         "source.css entity.other.attribute-name.class",
         "source.css entity.other.attribute-name.pseudo-class",
         "source.css.less entity.other.attribute-name.id",
+        "support.class.component.jsx",
         "support.function.django",
         "support.type.tag.begin.django",
         "support.type.tag.end.django",
@@ -417,8 +504,13 @@
     {
       "scope": [
         "keyword.operator.assignment.django",
+        "markup.fenced_code.block.markdown",
+        "markup.inline.raw.string.markdown",
         "meta.tag.structure.django",
         "meta.variable.structure.django",
+        "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.string.begin.go",
+        "punctuation.definition.string.end.go",
         "string",
         "variable.other.django"
       ],
@@ -428,6 +520,8 @@
     },
     {
       "scope": [
+        "meta.embedded.expression.jsx punctuation.definition.string.template.begin.jsx",
+        "meta.embedded.expression.jsx punctuation.definition.string.template.end.jsx",
         "punctuation.definition.string",
         "punctuation.definition.string.template.begin.js",
         "punctuation.definition.string.template.begin.ts",
@@ -441,8 +535,24 @@
     {
       "scope": [
         "entity.name.tag.html",
+        "entity.name.tag.jsx",
+        "heading.2.markdown",
+        "heading.2.markdown punctuation.definition.heading.markdown",
+        "keyword.channel.go",
+        "keyword.const.go",
         "keyword.control",
+        "keyword.control.conditional.go",
+        "keyword.control.defer.go",
+        "keyword.control.go",
+        "keyword.control.go.go",
+        "keyword.control.import.go",
+        "keyword.control.repeat.go",
+        "keyword.control.statement.go",
         "keyword.function",
+        "keyword.function.go",
+        "keyword.import.go",
+        "keyword.interface.go",
+        "keyword.map.go",
         "keyword.operator.expression.delete.js",
         "keyword.operator.expression.delete.ts",
         "keyword.operator.expression.in.js",
@@ -456,13 +566,26 @@
         "keyword.operator.logical.python",
         "keyword.operator.new.js",
         "keyword.operator.new.ts",
+        "keyword.package.go",
+        "keyword.struct.go",
         "keyword.type",
+        "keyword.type.go",
+        "keyword.var.go",
         "meta.class.js storage.modifier.js",
         "meta.class.ts storage.modifier.ts",
+        "meta.embedded.expression.jsx keyword.operator.expression.delete.jsx",
+        "meta.embedded.expression.jsx keyword.operator.expression.in.jsx",
+        "meta.embedded.expression.jsx keyword.operator.expression.instanceof.jsx",
+        "meta.embedded.expression.jsx keyword.operator.expression.typeof.jsx",
+        "meta.embedded.expression.jsx keyword.operator.expression.void.jsx",
+        "meta.embedded.expression.jsx keyword.operator.new.jsx",
+        "meta.embedded.expression.jsx meta.class.jsx storage.modifier.jsx",
+        "meta.embedded.expression.jsx storage.modifier.async.jsx",
+        "meta.embedded.expression.jsx storage.modifier.jsx",
+        "meta.embedded.expression.jsx variable.language.super.jsx",
+        "meta.embedded.expression.jsx variable.language.this.jsx",
         "punctuation.definition.string.begin.astro",
         "punctuation.definition.string.end.astro",
-        "punctuation.definition.tag.begin.js.jsx",
-        "punctuation.definition.tag.end.js.jsx",
         "punctuation.separator.key-value.astro",
         "storage.modifier.async.js",
         "storage.modifier.async.ts",
@@ -480,8 +603,11 @@
     },
     {
       "scope": [
+        "meta.embedded.expression.jsx variable.language.this.jsx",
         "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.begin.jsx",
         "punctuation.definition.tag.end.html",
+        "punctuation.definition.tag.end.jsx",
         "variable.language.this.js",
         "variable.language.this.ts"
       ],
@@ -492,7 +618,13 @@
     {
       "scope": [
         "constant.character.format.placeholder.other.python",
+        "keyword.operator.address.go",
+        "keyword.operator.channel.go",
         "keyword.operator.type.annotation.ts",
+        "meta.embedded.expression.jsx keyword.operator.type.annotation.jsx",
+        "meta.embedded.expression.jsx punctuation.accessor.optional.jsx",
+        "meta.embedded.expression.jsx punctuation.definition.template-expression.begin.jsx",
+        "meta.embedded.expression.jsx punctuation.definition.template-expression.end.jsx",
         "meta.fstring.python",
         "punctuation.accessor.optional.js",
         "punctuation.accessor.optional.ts",
@@ -500,6 +632,7 @@
         "punctuation.definition.template-expression.begin.ts",
         "punctuation.definition.template-expression.end.js",
         "punctuation.definition.template-expression.end.ts",
+        "string meta.image.inline.markdown",
         "support.variable.magic.python"
       ],
       "settings": {
@@ -509,12 +642,29 @@
     {
       "scope": [
         "entity.name.type.alias.ts",
+        "entity.name.type.any.go",
         "entity.name.type.enum.ts",
         "entity.name.type.interface.ts",
         "entity.name.type.js",
         "entity.name.type.ts",
-        "keyword.operator.logical.js.jsx",
-        "support.type.primitive.ts"
+        "fenced_code.block.language",
+        "markup.fenced_code.block.markdown punctuation.definition.markdown",
+        "markup.italic.markdown punctuation.definition",
+        "meta.embedded.expression.jsx entity.name.type.alias.jsx",
+        "meta.embedded.expression.jsx entity.name.type.enum.jsx",
+        "meta.embedded.expression.jsx entity.name.type.interface.jsx",
+        "meta.embedded.expression.jsx entity.name.type.jsx",
+        "meta.embedded.expression.jsx support.type.primitive.jsx",
+        "punctuation.definition.bold.markdown",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.raw.markdown",
+        "storage.type.boolean.go",
+        "storage.type.numeric.go",
+        "storage.type.string.go",
+        "string.other.link.description.title.markdown",
+        "support.type.primitive.ts",
+        "text.html.markdown markup.inline.raw.markdown"
       ],
       "settings": {
         "foreground": "#ab85dc"
@@ -524,6 +674,7 @@
       "scope": [
         "comment.block.documentation.js punctuation.definition.comment.js",
         "comment.block.documentation.ts punctuation.definition.comment.ts",
+        "meta.embedded.expression.jsx comment.block.documentation.jsx punctuation.definition.comment.jsx",
         "string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
         "string.quoted.docstring.multi.python punctuation.definition.string.end.python"
       ],
@@ -533,8 +684,28 @@
     },
     {
       "scope": [
+        "invalid.deprecated.entity.other.attribute-name.jsx"
+      ],
+      "settings": {
+        "foreground": "#c8d3f3",
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "scope": [
+        "comment.block.jsx",
+        "punctuation.definition.comment.jsx"
+      ],
+      "settings": {
+        "foreground": "#c8d3f3",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
         "comment.block.documentation.js",
         "comment.block.documentation.ts",
+        "meta.embedded.expression.jsx comment.block.documentation.jsx",
         "string.quoted.docstring.multi.python"
       ],
       "settings": {
@@ -543,12 +714,36 @@
     },
     {
       "scope": [
-        "meta.jsx.children.js.jsx",
         "source.astro meta.embedded.expression.astro",
         "text.astro"
       ],
       "settings": {
         "foreground": "#ffffff"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown"
+      ],
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "markup.italic.markdown"
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "markup.bold.markdown"
+      ],
+      "settings": {
+        "fontStyle": "bold"
       }
     }
   ],
@@ -557,25 +752,48 @@
     "builtinConstant.typeHint.readonly.builtin:python": "#ab85dc",
     "class.builtin:python": "#0787C2",
     "class.decorator.builtin:python": "#AD8B68",
+    "class.library:python": "#0787C2",
     "class.typeHint.builtin:python": "#ab85dc",
+    "class.typeHint.library:python": "#ab85dc",
     "class.typeHint:python": "#ab85dc",
+    "class:javascriptreact": "#ab85dc",
+    "class:typescriptreact": "#ab85dc",
+    "enumMember:javascriptreact": "#6dcaf5",
     "enumMember:typescript": "#6dcaf5",
+    "enumMember:typescriptreact": "#6dcaf5",
     "function.declaration:python": "#0787C2",
+    "interface:javascriptreact": "#ab85dc",
     "interface:typescript": "#ab85dc",
+    "interface:typescriptreact": "#ab85dc",
+    "module.typeHint:python": "#ab85dc",
     "module:python": "#000000",
+    "namespace:javascriptreact": "#000000",
+    "namespace:typescriptreact": "#000000",
     "parameter.declaration:javascript": "#025880",
+    "parameter.declaration:javascriptreact": "#025880",
     "parameter.declaration:typescript": "#025880",
+    "parameter.declaration:typescriptreact": "#025880",
     "parameter.keywordArgument:python": "#025880",
     "parameter.variable.parameter:python": "#025880",
     "parameter:python": "#025880",
     "property:python": "#025880",
+    "type:javascriptreact": "#ab85dc",
     "type:typescript": "#ab85dc",
+    "type:typescriptreact": "#ab85dc",
     "typeParameter.typeHint:python": "#ab85dc",
     "typeParameter:typescript": "#ab85dc",
     "variable.builtin:python": "#025880",
     "variable.callable:python": "#0787C2",
     "variable.declaration.callable:python": "#0787C2",
+    "variable.declaration.readonly:javascriptreact": "#6dcaf5",
+    "variable.declaration.readonly:typescriptreact": "#6dcaf5",
+    "variable.defaultLibrary:javascriptreact": "#16b4b9",
+    "variable.defaultLibrary:typescriptreact": "#16b4b9",
+    "variable.readonly:javascriptreact": "#6dcaf5",
+    "variable.readonly:typescriptreact": "#6dcaf5",
     "variable:javascript": "#025880",
-    "variable:typescript": "#6dcaf5"
+    "variable:javascriptreact": "#6dcaf5",
+    "variable:typescript": "#6dcaf5",
+    "variable:typescriptreact": "#6dcaf5"
   }
 }

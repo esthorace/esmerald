@@ -109,6 +109,9 @@ module.exports = function createColors(colors) {
       "class.typeHint.builtin:python": colors.text_violet_dark,
       "typeParameter.typeHint:python": colors.text_violet_dark,
       "module:python": colors.text_black_dark,
+      "class.library:python": colors.text_blue_dark,
+      "class.typeHint.library:python": colors.text_violet_dark,
+      "module.typeHint:python": colors.text_violet_dark,
     },
   };
 };
