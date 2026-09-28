@@ -16,7 +16,6 @@ Text
 Text **bold**
 
 Text _italic_
-
 #### Title 4
 
 [description](link)

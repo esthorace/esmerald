@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Comentario HTML estándar -->
+{# Comentario de plantilla Django: prueba django.template.comment #}
+<html lang="es">
+    <head>
+        <title>{{ page_title|default:"Lorem Ipsum"|title }}</title>
+    </head>
+    <body style="background-color: #1a1a1a;
+                 color: #f0f0f0;
+                 font-family: 'Segoe UI', sans-serif;
+                 margin: 0;
+                 padding: 20px">
+        {% load static custom_tags %}
+
+        <header style="border-bottom: 2px solid #0c4b33; padding-bottom: 10px;">
+            <!-- Acceso a variables, etiquetas de URL y filtros encadenados -->
+            <h1 style="color: #44b78b; font-size: 2em; margin: 0;">
+                <a href="{% url 'blog:detail' pk=article.id %}"
+                   style="color: inherit;
+                          text-decoration: none">{{ article.title|upper|truncatechars:30 }}</a>
+            </h1>
+            <span style="color: #a0a0a0; font-size: 0.9em;">
+                Publicado el {{ article.created_at|date:"Y-m-d H:i" }} por {{ article.author.get_full_name|default:"Anónimo" }}
+            </span>
+        </header>
+        <main style="margin-top: 20px;">
+            <!-- Estructuras de control: if/elif/else y comparaciones -->
+            {% if article.status == "published" and article.views >= 100 %}
+                <p style="background-color: rgba(68, 183, 139, 0.15);
+                          border-left: 4px solid #44b78b;
+                          padding: 12px;
+                          margin: 10px 0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Status: <strong>{{ article.get_status_display }}</strong>.
+                </p>
+            {% elif not article.is_draft %}
+                <p style="color: #e5c07b; font-style: italic;">Sed do eiusmod tempor incididunt ut labore.</p>
+            {% else %}
+                <p style="color: #e06c75;">Contenido en revisión.</p>
+            {% endif %}
+            <!-- Bucles for, asignaciones temporales con with, y uso de empty -->
+            <ul style="list-style-type: square; padding-left: 20px;">
+                {% for item in article.comments.all %}
+                    {% with item_counter=forloop.counter is_even=forloop.counter0|divisibleby:2 %}
+                        <li style="padding: 6px;
+                                   background-color:
+                                   {% if is_even %}#252525{% else %}#1f1f1f{% endif %}">
+                            #{{ item_counter }} - <span style="color: #61afef">{{ item.user.username }}</span>:
+                            {{ item.text|safe|linebreaksbr }}
+                        </li>
+                    {% endwith %}
+                {% empty %}
+                    <li style="color: #7f848e;">No hay comentarios en este artículo.</li>
+                {% endfor %}
+            </ul>
+        </main>
+        <footer style="margin-top: 30px; font-size: 0.8em; color: #5c6370;">
+            <!-- Filtros con argumentos numéricos y booleanos -->
+            <p style="text-align: center;
+                      border-top: 1px dashed #333;
+                      padding-top: 10px">
+                Total: {{ article.comments.count|add:5 }} | Activo: {{ is_active|yesno:"Sí,No,Tal vez" }}
+            </p>
+        </footer>
+    </body>
+</html>
