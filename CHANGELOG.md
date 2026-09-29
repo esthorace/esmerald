@@ -2,6 +2,10 @@
 
 All notable changes to the "python-theme" extension will be documented in this file.
 
+## [2.13.0] - 2026-09-24
+
+- Improve Light Theme. Support: Javascript, Typescript; Golang, Python, HTML, Django Support
+
 ## [2.8.0] - 2026-03-04
 
 - Add Golang support

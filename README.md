@@ -1,17 +1,33 @@
-# Esmerald
+# 💎 Esmerald
+
+It’s a beautiful theme.
 
 ## Esmerald (dark)
 
-It’s a beautiful theme.
+### Python
+![General - Python](static/general_dark.png)
 
-![capture1](static/capt1.png)
+### JavaScript
+![Javacript](static/js_dark.png)
 
-**Enjoy!**
+### Golang
+![Go](static/go_dark.png)
 
-## Esmerald Light
+### HTML
+![HTML](static/html_dark.png)
 
-It’s a beautiful theme.
+## Esmerald (light)
 
-![capture2](static/capt2.png)
+### Python
+![General - Python](static/general_light.png)
 
-**Enjoy!**
+### JavaScript
+![Javacript](static/js_light.png)
+
+### Golang
+![Go](static/go_light.png)
+
+### HTML
+![HTML](static/html_light.png)
+
+_**Enjoy!**_
