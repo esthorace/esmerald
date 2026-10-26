@@ -1,7 +1,7 @@
 {
   "name": "python-theme",
   "displayName": "Esmerald",
-  "version": "2.13.0",
+  "version": "3.0.0",
   "license": "MIT",
   "publisher": "esthorace",
   "description": "It's a beautiful theme",
@@ -38,6 +38,11 @@
         "label": "Esmerald",
         "uiTheme": "vs-dark",
         "path": "./themes/esmerald.json"
+      },
+      {
+        "label": "Esmerald Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/esmerald-night.json"
       },
       {
         "label": "Esmerald Light",
